@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIvour - Shopify Website</title>
+  <style>
+    body {
+      background: #111;
+      color: #f0f0f0;
+      font-family: 'Fira Code', monospace;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1f1f1f;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    h1 {
+      color: #e8b87a;
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+    a {
+      color: #e8b87a;
+      text-decoration: none;
+    }
+
+    /* Image Styling */
+    .project-image {
+      max-width: 400px; 
+      height: auto;
+      margin-bottom: 1rem;
+      border: 2px solid #e8b87a;
+    }
+
+    /* Metrics Area */
+    .project-metrics {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .metric-box {
+      border: 2px solid #e8b87a;
+      padding: 0.8rem 1.2rem;
+      min-width: 100px;
+      text-align: center;
+    }
+    .metric-title {
+      font-size: 0.9rem;
+      color: #e8b87a;
+      margin-bottom: 0.3rem;
+    }
+    .metric-value {
+      font-size: 1rem;
+      color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Jannik Hofstetter</h2>
+  </header>
+
+  <main>
+    <h1>AIvour - Shopify Website</h1>
+
+    <!-- Preview Image -->
+    <img src="images/project2.png" alt="AIvour Preview" class="project-image" />
+
+    <!-- Metrics (Team / Rating / Cost) -->
+    <div class="project-metrics">
+      <div class="metric-box">
+        <div class="metric-title">Team</div>
+        <div class="metric-value">1</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-title">Rating</div>
+        <div class="metric-value">8/10</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-title">Cost</div>
+        <div class="metric-value">$15</div>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <p>
+      <strong>AIvour</strong> was a Shopify-based website where I built a frontend
+      that was optimized for both mobile and desktop users. The main goal was to allow
+      people to order AI-generated images by entering a prompt and configuring certain parameters
+      like the number of steps or the desired quality.
+    </p>
+    <p>
+      Once the user submitted their order and paid, the details
+      (including prompt and configuration) would be sent to my system automatically.
+      From there, I would process the request, generate the AI-based image,
+      and deliver it back to the customer. 
+    </p>
+    <p>
+      Essentially, it was an online store for AI artwork.
+      The Shopify integration handled the e-commerce side (payments, cart, etc.),
+      while my custom backend script took care of the prompt processing
+      and image generation workflow.
+    </p>
+    <p>
+      This project taught me a lot about setting up an efficient flow
+      between <strong>Shopify</strong> and an AI generation system.
+      I also focused on making the design appealing and easy to navigate,
+      ensuring the site was fully responsive for all devices.
+    </p>
+
+    <!-- Back Link -->
+    <p>
+      <a href="index.html">&larr; Back to Homepage</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Created by Jannik Hofstetter</p>
+  </footer>
+</body>
+</html>

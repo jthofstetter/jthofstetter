@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jannik Hofstetter - Personal Website</title>
+
+  <!-- Google Fonts: Fira Code & Bebas Neue -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1 class="title animate-hero">JANNIK HOFSTETTER</h1>
+      <p class="subtitle">Personal Website</p>
+    </div>
+    <!-- Profile Picture -->
+    <div class="profile-pic-header">
+      <img src="images/profilepicture.png" alt="Profile Picture of Jannik" />
+    </div>
+    <!-- Typewriter Introduction -->
+    <div class="intro-typewriter">
+      <span id="introduction-text"></span><span id="intro-cursor">|</span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Special Knowledge -->
+    <section class="section special-knowledge">
+      <h2>Special Knowledge</h2>
+      <div class="knowledge-grid">
+        <div class="knowledge-row">
+          <div class="knowledge-left">Content Creation</div>
+          <div class="knowledge-right">Premiere Pro, Paint.NET</div>
+        </div>
+        <div class="knowledge-row">
+          <div class="knowledge-left">Programming</div>
+          <div class="knowledge-right">C#, Python, C, JS</div>
+        </div>
+        <div class="knowledge-row">
+          <div class="knowledge-left">AI & Machine Learning</div>
+          <div class="knowledge-right">SDXL, Hunyuan, A1111, Fooocus, Ollama</div>
+        </div>
+        <div class="knowledge-row">
+          <div class="knowledge-left">Blockchain & Crypto</div>
+          <div class="knowledge-right">Use of APIs & JSON</div>
+        </div>
+      </div>
+      <p class="knowledge-info">
+        Many more tools, including various online platforms, have been used in different projects. 
+        However, to keep things concise, only the most frequently used tools are listed here.
+      </p>
+    </section>
+
+    <!-- Job Experience -->
+    <section class="section job-experience">
+      <h2>Job Experience</h2>
+      <div class="job-list">
+        <!-- 1) Conen Waidhofen -->
+        <div class="job-block">
+          <h3 class="job-title">Conen Wohnstudio</h3>
+          <p class="job-dates">08/2024 - 09/2024</p>
+          <p class="job-description">
+            Delivered furniture, observed general company processes,
+            and helped with various tasks. This provided a solid insight into how the business operates.
+          </p>
+          <div class="job-metrics">
+            <div class="metric-box">
+              <div class="metric-title">Task</div>
+              <div class="metric-value">General</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-title">Rating</div>
+              <div class="metric-value">8/10</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2) Worked for a Self-Employed Person -->
+        <div class="job-block">
+          <h3 class="job-title">Worked for a Self-Employed Person</h3>
+          <p class="job-dates">07/2024 - 08/2024</p>
+          <p class="job-description">
+            Assisted with IT-related tasks, including setting up and rebuilding PCs, 
+            organizing folder structures, installing printers, and optimizing overall workflow.
+          </p>
+          <div class="job-metrics">
+            <div class="metric-box">
+              <div class="metric-title">Task</div>
+              <div class="metric-value">IT</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-title">Rating</div>
+              <div class="metric-value">9/10</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3) Test-Fuchs GmbH -->
+        <div class="job-block">
+          <h3 class="job-title">Test-Fuchs GmbH</h3>
+          <p class="job-dates">07/2023 - 08/2023</p>
+          <p class="job-description">
+            Worked in logistics, helped in the warehouse with sorting, packing, and inventory.
+            Also got to know the company in a hands-on way.
+          </p>
+          <div class="job-metrics">
+            <div class="metric-box">
+              <div class="metric-title">Task</div>
+              <div class="metric-value">Logistics</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-title">Rating</div>
+              <div class="metric-value">8/10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="section projects">
+  
+
+  <h2>Projects</h2>
+  <!-- Legend -->
+  <div class="project-legend">
+    <div class="legend-item">
+      <span class="legend-bar legend-completed"></span> Finished
+    </div>
+    <div class="legend-item">
+      <span class="legend-bar legend-ongoing"></span> Ongoing
+    </div>
+  </div>
+
+  <div class="projects-container">
+    
+    <!-- Project 1 - Crypto Project (ONGOING) -->
+    <a class="project-card project-ongoing" href="project1.html">
+      <img src="images/project1.png" alt="Project 1" />
+      <h3>Crypto Project</h3>
+      <p class="project-description">Short description of Project 1</p>
+    </a>
+
+    <!-- Project 2 - AIvour (COMPLETED) -->
+    <a class="project-card project-completed" href="project2.html">
+      <img src="images/project2.png" alt="Project 2" />
+      <h3>AIvour</h3>
+      <p class="project-description">Short description of Project 2</p>
+    </a>
+
+    <!-- Project 3 - To-Do App (COMPLETED) -->
+    <a class="project-card project-completed" href="project3.html">
+      <img src="images/project3.png" alt="Project 3" />
+      <h3>To-Do App</h3>
+      <p class="project-description">Short description of Project 3</p>
+    </a>
+
+    <!-- Project 4 - Document Classification (ONGOING) -->
+    <a class="project-card project-ongoing" href="project4.html">
+      <img src="images/project4.png" alt="Project 4" />
+      <h3>Document Classification</h3>
+      <p class="project-description">Short description of Project 4</p>
+    </a>
+
+    <a class="project-card project-completed" href="project5.html">
+      <img src="images/project5.jpeg" alt="Project 5" />
+      <h3>AI Social Media</h3>
+      <p class="project-description">TikTok, YouTube and Instagram</p>
+    </a>
+
+    <a class="project-card project-completed" href="project6.html">
+      <img src="images/project6.png" alt="Project 6" />
+      <h3>CoRide</h3>
+      <p class="project-description">Uber alternative .NET MAUI App</p>
+    </a>
+
+  </div>
+</section>
+
+
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 | Created by Jannik Hofstetter</p>
+  </footer>
+
+  <!-- JS for Animations -->
+  <script src="animations.js"></script>
+</body>
+</html>
