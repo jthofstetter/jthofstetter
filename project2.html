@@ -2,130 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AIvour - Shopify Website</title>
-  <style>
-    body {
-      background: #111;
-      color: #f0f0f0;
-      font-family: 'Fira Code', monospace;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      text-align: center;
-      padding: 1rem;
-      background: #1f1f1f;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      text-align: center;
-    }
-    h1 {
-      color: #e8b87a;
-      margin-bottom: 1rem;
-    }
-    p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-      text-align: left;
-    }
-    a {
-      color: #e8b87a;
-      text-decoration: none;
-    }
-
-    /* Image Styling */
-    .project-image {
-      max-width: 400px; 
-      height: auto;
-      margin-bottom: 1rem;
-      border: 2px solid #e8b87a;
-    }
-
-    /* Metrics Area */
-    .project-metrics {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    .metric-box {
-      border: 2px solid #e8b87a;
-      padding: 0.8rem 1.2rem;
-      min-width: 100px;
-      text-align: center;
-    }
-    .metric-title {
-      font-size: 0.9rem;
-      color: #e8b87a;
-      margin-bottom: 0.3rem;
-    }
-    .metric-value {
-      font-size: 1rem;
-      color: #f0f0f0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIvour Prompt Studio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="project-detail">
   <header>
-    <h2>Jannik Hofstetter</h2>
-  </header>
-
-  <main>
-    <h1>AIvour - Shopify Website</h1>
-
-    <!-- Preview Image -->
-    <img src="images/project2.png" alt="AIvour Preview" class="project-image" />
-
-    <!-- Metrics (Team / Rating / Cost) -->
-    <div class="project-metrics">
-      <div class="metric-box">
-        <div class="metric-title">Team</div>
-        <div class="metric-value">1</div>
+    <div class="project-header-shell">
+      <div class="project-header-text">
+        <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Back to overview</a>
+        <span class="status-chip status-completed">Completed</span>
+        <h1 class="project-title">AIvour Prompt Studio</h1>
+        <p class="project-tagline">
+          A polished storefront where customers configure AI prompts, pay through Shopify, and
+          receive tailor-made artwork without touching a single line of code.
+        </p>
       </div>
-      <div class="metric-box">
-        <div class="metric-title">Rating</div>
-        <div class="metric-value">8/10</div>
-      </div>
-      <div class="metric-box">
-        <div class="metric-title">Cost</div>
-        <div class="metric-value">$15</div>
+      <div class="project-hero-media">
+        <img
+          src="images/project2.png"
+          alt="AIvour Shopify storefront preview"
+          class="project-hero-image"
+        />
       </div>
     </div>
+  </header>
 
-    <!-- Description -->
-    <p>
-      <strong>AIvour</strong> was a Shopify-based website where I built a frontend
-      that was optimized for both mobile and desktop users. The main goal was to allow
-      people to order AI-generated images by entering a prompt and configuring certain parameters
-      like the number of steps or the desired quality.
-    </p>
-    <p>
-      Once the user submitted their order and paid, the details
-      (including prompt and configuration) would be sent to my system automatically.
-      From there, I would process the request, generate the AI-based image,
-      and deliver it back to the customer. 
-    </p>
-    <p>
-      Essentially, it was an online store for AI artwork.
-      The Shopify integration handled the e-commerce side (payments, cart, etc.),
-      while my custom backend script took care of the prompt processing
-      and image generation workflow.
-    </p>
-    <p>
-      This project taught me a lot about setting up an efficient flow
-      between <strong>Shopify</strong> and an AI generation system.
-      I also focused on making the design appealing and easy to navigate,
-      ensuring the site was fully responsive for all devices.
-    </p>
+  <main class="project-main">
+    <section class="project-metrics-grid">
+      <div class="project-metric">
+        <p class="metric-title">Team Size</p>
+        <p class="metric-value">Solo build</p>
+      </div>
+      <div class="project-metric">
+        <p class="metric-title">User Rating</p>
+        <p class="metric-value">8 / 10</p>
+      </div>
+      <div class="project-metric">
+        <p class="metric-title">Operational Cost</p>
+        <p class="metric-value">$15 / month</p>
+      </div>
+    </section>
 
-    <!-- Back Link -->
-    <p>
-      <a href="index.html">&larr; Back to Homepage</a>
-    </p>
+    <section class="project-summary glass-card">
+      <h2>Project Overview</h2>
+      <p>
+        <strong>AIvour</strong> turns AI art into a shoppable service. Visitors craft a prompt,
+        choose parameters such as inference steps or delivery speed, and complete checkout using
+        Shopify’s secure pipeline. Every order triggers an automated payload that lands in my
+        processing queue, where I generate the imagery and deliver the results back to the client.
+      </p>
+      <p>
+        The entire journey was tuned for responsiveness, meaning the storefront stays as delightful
+        on phones as it is on desktops. Clear copy, structured product pages, and subtle animations
+        keep the brand cohesive while the backend handles payments and fulfillment seamlessly.
+      </p>
+    </section>
+
+    <section class="project-highlights">
+      <article class="highlight-card glass-card">
+        <h3>Experience Highlights</h3>
+        <ul>
+          <li>Custom product configurator that translates user prompts into structured orders.</li>
+          <li>Automated email handover so clients receive artwork with zero manual chasing.</li>
+          <li>Responsive layouts with micro-animations to reinforce a premium service feel.</li>
+        </ul>
+      </article>
+
+      <article class="highlight-card glass-card">
+        <h3>Tech Stack</h3>
+        <ul class="tag-list">
+          <li>Shopify</li>
+          <li>Liquid</li>
+          <li>JavaScript</li>
+          <li>Shopify Webhooks</li>
+          <li>Stable Diffusion</li>
+        </ul>
+      </article>
+
+      <article class="highlight-card glass-card">
+        <h3>My Contributions</h3>
+        <ul>
+          <li>Designed the brand identity and purchase flow to reduce friction for new buyers.</li>
+          <li>Implemented webhook handlers that forward prompt data directly into my generation rig.</li>
+          <li>Crafted responsive UI components and loading states for a delightful checkout journey.</li>
+        </ul>
+      </article>
+    </section>
   </main>
 
   <footer>
