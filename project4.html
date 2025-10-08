@@ -15,16 +15,16 @@
     <div class="project-header-shell">
       <div class="project-header-text">
         <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Back to overview</a>
-        <span class="status-chip status-finished">Finished</span>
+        <span class="status-chip status-completed">Completed</span>
         <h1 class="project-title">Form Intelligence System</h1>
         <p class="project-tagline">
-          A hybrid LLM pipeline that processes scanned documents using OCR, local AI models, and structured field extraction for automated downstream usage.
+          A dual-AI document pipeline that processes scanned business forms using OCR, LLMs and a fully local stack for structured field extraction.
         </p>
       </div>
       <div class="project-hero-media">
         <img
-          src="images/project5.png"
-          alt="Architecture diagram for form processing"
+          src="images/projectX.png"
+          alt="Form processing pipeline architecture"
           class="project-hero-image"
         />
       </div>
@@ -42,32 +42,33 @@
         <p class="metric-value">9 months</p>
       </div>
       <div class="project-metric">
-        <p class="metric-title">Client</p>
-        <p class="metric-value">WEB Windenergie AG</p>
+        <p class="metric-title">Partner</p>
+        <p class="project-metric">WEB Windenergie AG</p>
       </div>
     </section>
 
     <section class="project-summary glass-card">
       <h2>Project Overview</h2>
       <p>
-        Our diploma thesis aimed to automate the processing of business documents — especially scanned forms — using open-source LLMs and OCR pipelines. 
-        The system was fully containerized and operated 100% locally for data privacy.
+        This diploma project aimed to automate the analysis of scanned forms using a hybrid AI system.
+        We deployed both text-based and visual models to extract key fields from various PDF layouts
+        and stored the results in a structured database. All inference runs locally – no external APIs involved.
       </p>
       <p>
-        We evaluated multiple models and implemented two parallel AI tracks: one text-based (OCR + Qwen2.5), the other vision-based (Donut Transformer). 
-        Data extraction results were processed and saved via a RESTful API and visualized in a modern frontend.
+        At its core, the system connects OCR preprocessing, LLM-based field detection,
+        a robust RESTful API, and a reactive UI built with Blazor and SignalR. Each component is modular and Dockerized.
       </p>
     </section>
 
     <section class="project-highlights">
       <article class="highlight-card glass-card">
-        <h3>Pipeline Highlights</h3>
+        <h3>System Highlights</h3>
         <ul>
-          <li>Local OCR pipeline using Tesseract and pdf2image.</li>
-          <li>Text extraction via Qwen 2.5 using Ollama (REST interface).</li>
-          <li>Visual document understanding with Donut (Vision Transformer).</li>
-          <li>REST API (Flask + C# ASP.NET) with SignalR for real-time updates.</li>
-          <li>Structured MySQL storage with Docker-based deployment.</li>
+          <li>OCR preprocessing using Tesseract and pdf2image.</li>
+          <li>Text-based field extraction with Qwen 2.5 via Ollama (local LLM).</li>
+          <li>Visual form analysis using Donut (Vision Transformer).</li>
+          <li>SignalR-powered real-time UI feedback and status tracking.</li>
+          <li>Full RESTful backend with MySQL storage and Dockerized services.</li>
         </ul>
       </article>
 
@@ -76,23 +77,24 @@
         <ul class="tag-list">
           <li>Python</li>
           <li>Qwen 2.5</li>
-          <li>Ollama</li>
           <li>Donut</li>
-          <li>Flask</li>
+          <li>Ollama</li>
           <li>Tesseract OCR</li>
+          <li>Flask</li>
           <li>C# ASP.NET</li>
           <li>Blazor</li>
+          <li>SignalR</li>
           <li>MySQL</li>
           <li>Docker</li>
         </ul>
       </article>
 
       <article class="highlight-card glass-card">
-        <h3>Key Learnings</h3>
+        <h3>My Contributions</h3>
         <ul>
-          <li>Combining multimodal AI models creates more robust document intelligence.</li>
-          <li>Local inference pipelines can replace cloud APIs in real-world scenarios.</li>
-          <li>Prompt engineering is essential for precise field extraction.</li>
+          <li>Developed the full Python OCR + LLM processing pipeline with local Qwen integration.</li>
+          <li>Engineered advanced prompt structures for field extraction from noisy OCR output.</li>
+          <li>Built and deployed a responsive Blazor frontend with live API interaction via SignalR.</li>
         </ul>
       </article>
     </section>
