@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document Intelligence Pipeline</title>
+  <title>Form Intelligence System</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
     rel="stylesheet"
@@ -15,17 +15,16 @@
     <div class="project-header-shell">
       <div class="project-header-text">
         <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Back to overview</a>
-        <span class="status-chip status-ongoing">Ongoing</span>
-        <h1 class="project-title">Document Intelligence Pipeline</h1>
+        <span class="status-chip status-finished">Finished</span>
+        <h1 class="project-title">Form Intelligence System</h1>
         <p class="project-tagline">
-          A modular platform that ingests business documents, classifies them with AI, and validates
-          extracted data points against OCR ground truth for trustworthy automation.
+          A hybrid LLM pipeline that processes scanned documents using OCR, local AI models, and structured field extraction for automated downstream usage.
         </p>
       </div>
       <div class="project-hero-media">
         <img
-          src="images/project4.png"
-          alt="Workflow diagram for document processing"
+          src="images/project5.png"
+          alt="Architecture diagram for form processing"
           class="project-hero-image"
         />
       </div>
@@ -36,31 +35,27 @@
     <section class="project-metrics-grid">
       <div class="project-metric">
         <p class="metric-title">Team Size</p>
-        <p class="metric-value">2 specialists</p>
+        <p class="metric-value">2 developers</p>
       </div>
       <div class="project-metric">
-        <p class="metric-title">Confidence</p>
-        <p class="metric-value">9 / 10</p>
+        <p class="metric-title">Duration</p>
+        <p class="metric-value">9 months</p>
       </div>
       <div class="project-metric">
-        <p class="metric-title">Budget</p>
-        <p class="metric-value">$0 (internal)</p>
+        <p class="metric-title">Client</p>
+        <p class="metric-value">WEB Windenergie AG</p>
       </div>
     </section>
 
     <section class="project-summary glass-card">
       <h2>Project Overview</h2>
       <p>
-        The goal is to turn messy enterprise paperwork into structured, review-ready datasets. We
-        fine-tuned a classification model on curated, labeled corpora so it can detect document types
-        and extract target fields with high accuracy. Every prediction is cross-checked with the
-        original OCR text to keep the loop honest.
+        Our diploma thesis aimed to automate the processing of business documents — especially scanned forms — using open-source LLMs and OCR pipelines. 
+        The system was fully containerized and operated 100% locally for data privacy.
       </p>
       <p>
-        We split the pipeline into two dedicated branches: a classifier that handles type detection
-        plus structured extraction, and a lightweight analysis service for raw text comparisons. This
-        modular layout makes it easier to iterate on individual components without breaking the whole
-        system.
+        We evaluated multiple models and implemented two parallel AI tracks: one text-based (OCR + Qwen2.5), the other vision-based (Donut Transformer). 
+        Data extraction results were processed and saved via a RESTful API and visualized in a modern frontend.
       </p>
     </section>
 
@@ -68,9 +63,11 @@
       <article class="highlight-card glass-card">
         <h3>Pipeline Highlights</h3>
         <ul>
-          <li>OCR ingestion with cleaning routines that prep documents for machine learning.</li>
-          <li>Fine-tuned transformer models trained on annotated datasets for each document family.</li>
-          <li>Confidence checks that compare extracted values against the raw text stream.</li>
+          <li>Local OCR pipeline using Tesseract and pdf2image.</li>
+          <li>Text extraction via Qwen 2.5 using Ollama (REST interface).</li>
+          <li>Visual document understanding with Donut (Vision Transformer).</li>
+          <li>REST API (Flask + C# ASP.NET) with SignalR for real-time updates.</li>
+          <li>Structured MySQL storage with Docker-based deployment.</li>
         </ul>
       </article>
 
@@ -78,19 +75,24 @@
         <h3>Tech Stack</h3>
         <ul class="tag-list">
           <li>Python</li>
-          <li>Transformers</li>
-          <li>FastAPI</li>
+          <li>Qwen 2.5</li>
+          <li>Ollama</li>
+          <li>Donut</li>
+          <li>Flask</li>
           <li>Tesseract OCR</li>
-          <li>PostgreSQL</li>
+          <li>C# ASP.NET</li>
+          <li>Blazor</li>
+          <li>MySQL</li>
+          <li>Docker</li>
         </ul>
       </article>
 
       <article class="highlight-card glass-card">
-        <h3>Current Focus</h3>
+        <h3>Key Learnings</h3>
         <ul>
-          <li>Boost recall on edge-case fields through synthetic data augmentation.</li>
-          <li>Enhance the reviewer UI with actionable discrepancy insights.</li>
-          <li>Ship automated retraining hooks for continuous dataset improvements.</li>
+          <li>Combining multimodal AI models creates more robust document intelligence.</li>
+          <li>Local inference pipelines can replace cloud APIs in real-world scenarios.</li>
+          <li>Prompt engineering is essential for precise field extraction.</li>
         </ul>
       </article>
     </section>
