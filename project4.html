@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Form Intelligence System</title>
+  <title>KI Modell zur Formularevaluierung</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
     rel="stylesheet"
@@ -15,16 +15,17 @@
     <div class="project-header-shell">
       <div class="project-header-text">
         <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Back to overview</a>
-        <span class="status-chip status-completed">Completed</span>
-        <h1 class="project-title">Form Intelligence System</h1>
+        <span class="status-chip status-ongoing">Diplomarbeit</span>
+        <h1 class="project-title">KI Modell zur Formularevaluierung</h1>
         <p class="project-tagline">
-          A dual-AI document pipeline that processes scanned business forms using OCR, LLMs and a fully local stack for structured field extraction.
+          Mein HTL-Diplomarbeitsprojekt: KI-gestützte Formulare erkennen, Felder validieren und
+          Abweichungen transparent für Prüfer:innen sichtbar machen.
         </p>
       </div>
       <div class="project-hero-media">
         <img
-          src="images/projectX.png"
-          alt="Form processing pipeline architecture"
+          src="images/project4.png"
+          alt="Workflow diagram for document processing"
           class="project-hero-image"
         />
       </div>
@@ -35,40 +36,41 @@
     <section class="project-metrics-grid">
       <div class="project-metric">
         <p class="metric-title">Team Size</p>
-        <p class="metric-value">2 developers</p>
+        <p class="metric-value">2 specialists</p>
       </div>
       <div class="project-metric">
-        <p class="metric-title">Duration</p>
-        <p class="metric-value">9 months</p>
+        <p class="metric-title">Confidence</p>
+        <p class="metric-value">9 / 10</p>
       </div>
       <div class="project-metric">
-        <p class="metric-title">Partner</p>
-        <p class="project-metric">WEB Windenergie AG</p>
+        <p class="metric-title">Budget</p>
+        <p class="metric-value">$0 (internal)</p>
       </div>
     </section>
 
     <section class="project-summary glass-card">
-      <h2>Project Overview</h2>
+      <h2>Projektüberblick</h2>
       <p>
-        This diploma project aimed to automate the analysis of scanned forms using a hybrid AI system.
-        We deployed both text-based and visual models to extract key fields from various PDF layouts
-        and stored the results in a structured database. All inference runs locally – no external APIs involved.
+        Für unsere Diplomarbeit entwickeln wir ein <strong>KI-Modell zur Formularevaluierung</strong>,
+        das eingescannten Schriftverkehr automatisch erkennt, klassifiziert und die wichtigsten
+        Datenpunkte extrahiert. Jede erkannte Information wird mit dem ursprünglichen OCR-Text
+        abgeglichen, damit Auditor:innen Vertrauen in die Ergebnisse haben.
       </p>
       <p>
-        At its core, the system connects OCR preprocessing, LLM-based field detection,
-        a robust RESTful API, and a reactive UI built with Blazor and SignalR. Each component is modular and Dockerized.
+        Die Lösung besteht aus zwei Modulen: einem Klassifikator zur Dokumenttyp-Erkennung inklusive
+        Feldextraktion sowie einem Analyse-Service, der Abweichungen zwischen KI-Vorhersage und
+        Rohtext hervorhebt. So können wir das System iterativ verbessern und Fehlerfälle gezielt
+        nachtrainieren.
       </p>
     </section>
 
     <section class="project-highlights">
       <article class="highlight-card glass-card">
-        <h3>System Highlights</h3>
+        <h3>Projekt-Highlights</h3>
         <ul>
-          <li>OCR preprocessing using Tesseract and pdf2image.</li>
-          <li>Text-based field extraction with Qwen 2.5 via Ollama (local LLM).</li>
-          <li>Visual form analysis using Donut (Vision Transformer).</li>
-          <li>SignalR-powered real-time UI feedback and status tracking.</li>
-          <li>Full RESTful backend with MySQL storage and Dockerized services.</li>
+          <li>OCR-Vorverarbeitung inklusive Normalisierung handschriftlicher Ergänzungen.</li>
+          <li>Feinabgestimmte Transformer-Modelle pro Formularvariante.</li>
+          <li>Transparente Confidence-Checks mit Hervorhebung kritischer Felder.</li>
         </ul>
       </article>
 
@@ -76,25 +78,19 @@
         <h3>Tech Stack</h3>
         <ul class="tag-list">
           <li>Python</li>
-          <li>Qwen 2.5</li>
-          <li>Donut</li>
-          <li>Ollama</li>
+          <li>Transformers</li>
+          <li>FastAPI</li>
           <li>Tesseract OCR</li>
-          <li>Flask</li>
-          <li>C# ASP.NET</li>
-          <li>Blazor</li>
-          <li>SignalR</li>
-          <li>MySQL</li>
-          <li>Docker</li>
+          <li>PostgreSQL</li>
         </ul>
       </article>
 
       <article class="highlight-card glass-card">
-        <h3>My Contributions</h3>
+        <h3>Nächste Schritte</h3>
         <ul>
-          <li>Developed the full Python OCR + LLM processing pipeline with local Qwen integration.</li>
-          <li>Engineered advanced prompt structures for field extraction from noisy OCR output.</li>
-          <li>Built and deployed a responsive Blazor frontend with live API interaction via SignalR.</li>
+          <li>Edge-Cases durch synthetische Formulare erweitern und neu trainieren.</li>
+          <li>Reviewer-UI mit klaren Abweichungsmarkern für schnelle Entscheidungen.</li>
+          <li>Automatische Retraining-Pipeline für kontinuierliche Datenqualität.</li>
         </ul>
       </article>
     </section>
