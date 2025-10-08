@@ -2,113 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document Classification - Project</title>
-  <style>
-    body {
-      background: #111;
-      color: #f0f0f0;
-      font-family: 'Fira Code', monospace;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      text-align: center;
-      padding: 1rem;
-      background: #1f1f1f;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      text-align: center;
-    }
-    h1 {
-      color: #e8b87a;
-      margin-bottom: 1rem;
-    }
-    p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-      text-align: left;
-    }
-    a {
-      color: #e8b87a;
-      text-decoration: none;
-    }
-
-    /* Image styling */
-    .project-image {
-      max-width: 400px; 
-      height: auto;
-      margin-bottom: 1rem;
-      border: 2px solid #e8b87a;
-    }
-
-    /* Metrics area */
-    .project-metrics {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    .metric-box {
-      border: 2px solid #e8b87a;
-      padding: 0.8rem 1.2rem;
-      min-width: 100px;
-      text-align: center;
-    }
-    .metric-title {
-      font-size: 0.9rem;
-      color: #e8b87a;
-      margin-bottom: 0.3rem;
-    }
-    .metric-value {
-      font-size: 1rem;
-      color: #f0f0f0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document Intelligence Pipeline</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="project-detail">
   <header>
-    <h2>Jannik Hofstetter</h2>
-  </header>
-
-  <main>
-    <h1>Document Classification - AI Project</h1>
-
-    <!-- Preview Image -->
-    <img src="images/project4.png" alt="Document Classification Preview" class="project-image" />
-
-    <!-- Metrics (Team / Rating / Cost) -->
-    <div class="project-metrics">
-      <div class="metric-box">
-        <div class="metric-title">Team</div>
-        <div class="metric-value">2</div>
+    <div class="project-header-shell">
+      <div class="project-header-text">
+        <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Back to overview</a>
+        <span class="status-chip status-ongoing">Ongoing</span>
+        <h1 class="project-title">Document Intelligence Pipeline</h1>
+        <p class="project-tagline">
+          A modular platform that ingests business documents, classifies them with AI, and validates
+          extracted data points against OCR ground truth for trustworthy automation.
+        </p>
       </div>
-      <div class="metric-box">
-        <div class="metric-title">Rating</div>
-        <div class="metric-value">9/10</div>
-      </div>
-      <div class="metric-box">
-        <div class="metric-title">Cost</div>
-        <div class="metric-value">$0</div>
+      <div class="project-hero-media">
+        <img
+          src="images/project4.png"
+          alt="Workflow diagram for document processing"
+          class="project-hero-image"
+        />
       </div>
     </div>
+  </header>
 
-    <!-- Description -->
-    <p>We have been working on a project focused on extracting and analyzing <strong>structured data</strong> from documents. The goal is to automate the recognition and classification of <strong>key information</strong> while ensuring <strong>accuracy</strong> through validation steps.</p> 
-    <p>To achieve this, we trained a <strong>model</strong> capable of recognizing <strong>document types</strong> and extracting relevant fields. The training process involved carefully preparing <strong>labeled datasets</strong> with structured annotations. The model was fine-tuned to identify different types of documents and their respective fields.</p> 
-    <p>We integrated an <strong>OCR system</strong> to extract raw text from documents, ensuring that <strong>textual content</strong> is available for further analysis. The extracted text is then processed and used for <strong>comparison</strong> with the model's predictions.</p> 
-    <p>To validate the <strong>accuracy</strong> of the extracted data, we implemented a <strong>comparison mechanism</strong>. This checks whether the model's extracted values appear in the raw OCR text, helping to identify inconsistencies and improve performance.</p> 
-    <p>We also separated different components into <strong>dedicated pipelines</strong>. One part of the system focuses on <strong>classification</strong> and <strong>structured extraction</strong>, while another handles <strong>direct text analysis</strong>. This <strong>modular approach</strong> improves efficiency and flexibility.</p> 
-    <p>Several improvements were made to handle errors, including <strong>automatic correction</strong> of incomplete outputs and adjustments in <strong>data formatting</strong>. These refinements help ensure that the system remains <strong>reliable</strong> across different document types.</p> 
-    <p>Currently, we are refining the overall <strong>accuracy</strong> and optimizing the recognition of more challenging fields. Future improvements will focus on enhancing <strong>validation processes</strong>, refining <strong>training data</strong>, and improving handling of <strong>complex document structures</strong>.</p> 
+  <main class="project-main">
+    <section class="project-metrics-grid">
+      <div class="project-metric">
+        <p class="metric-title">Team Size</p>
+        <p class="metric-value">2 specialists</p>
+      </div>
+      <div class="project-metric">
+        <p class="metric-title">Confidence</p>
+        <p class="metric-value">9 / 10</p>
+      </div>
+      <div class="project-metric">
+        <p class="metric-title">Budget</p>
+        <p class="metric-value">$0 (internal)</p>
+      </div>
+    </section>
 
-    <!-- Back Link -->
-    <p>
-      <a href="index.html">&larr; Back to Homepage</a>
-    </p>
+    <section class="project-summary glass-card">
+      <h2>Project Overview</h2>
+      <p>
+        The goal is to turn messy enterprise paperwork into structured, review-ready datasets. We
+        fine-tuned a classification model on curated, labeled corpora so it can detect document types
+        and extract target fields with high accuracy. Every prediction is cross-checked with the
+        original OCR text to keep the loop honest.
+      </p>
+      <p>
+        We split the pipeline into two dedicated branches: a classifier that handles type detection
+        plus structured extraction, and a lightweight analysis service for raw text comparisons. This
+        modular layout makes it easier to iterate on individual components without breaking the whole
+        system.
+      </p>
+    </section>
+
+    <section class="project-highlights">
+      <article class="highlight-card glass-card">
+        <h3>Pipeline Highlights</h3>
+        <ul>
+          <li>OCR ingestion with cleaning routines that prep documents for machine learning.</li>
+          <li>Fine-tuned transformer models trained on annotated datasets for each document family.</li>
+          <li>Confidence checks that compare extracted values against the raw text stream.</li>
+        </ul>
+      </article>
+
+      <article class="highlight-card glass-card">
+        <h3>Tech Stack</h3>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>Transformers</li>
+          <li>FastAPI</li>
+          <li>Tesseract OCR</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </article>
+
+      <article class="highlight-card glass-card">
+        <h3>Current Focus</h3>
+        <ul>
+          <li>Boost recall on edge-case fields through synthetic data augmentation.</li>
+          <li>Enhance the reviewer UI with actionable discrepancy insights.</li>
+          <li>Ship automated retraining hooks for continuous dataset improvements.</li>
+        </ul>
+      </article>
+    </section>
   </main>
 
   <footer>
