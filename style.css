@@ -364,9 +364,6 @@ main {
   box-shadow: 0 12px 30px -25px rgba(0, 0, 0, 0.65);
 }
 
-
-
-
 /* ========== JOB EXPERIENCE ========== */
 .job-list {
   display: flex;
@@ -490,7 +487,6 @@ main {
   font-size: 1.1rem;
   color: var(--text-base);
 }
-
 
 /* ========== PROJECTS ========== */
 .projects-container {
@@ -616,9 +612,6 @@ main {
 .legend-ongoing {
   background: #a51d1d;
 }
-
-
-
 
 /* ========== PROJECT DETAIL PAGES ========== */
 body.project-detail {
@@ -968,6 +961,30 @@ footer {
   .intro-typewriter {
     font-size: 1.05rem;
   }
+
+  body.project-detail header {
+    padding: 3.2rem 1.8rem 3rem;
+  }
+
+  body.project-detail .project-header-shell {
+    grid-template-columns: 1fr;
+  }
+
+  body.project-detail .project-header-text {
+    order: 2;
+  }
+
+  body.project-detail .project-hero-media {
+    order: 1;
+  }
+
+  .project-main {
+    padding: 0 1.8rem 3.5rem;
+  }
+
+  .project-highlights {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
@@ -985,5 +1002,17 @@ footer {
 
   main {
     padding: 2.5rem 1.5rem 3rem;
+  }
+
+  body.project-detail header {
+    padding: 2.8rem 1.35rem 2.6rem;
+  }
+
+  .project-main {
+    padding: 0 1.35rem 3rem;
+  }
+
+  .project-metrics-grid {
+    grid-template-columns: 1fr;
   }
 }
