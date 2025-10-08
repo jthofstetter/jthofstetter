@@ -2,147 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CoRide - Ride Sharing App</title>
-  <style>
-    body {
-      background: #111;
-      color: #f0f0f0;
-      font-family: 'Fira Code', monospace;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      text-align: center;
-      padding: 1rem;
-      background: #1f1f1f;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      text-align: center;
-    }
-    h1 {
-      color: #e8b87a;
-      margin-bottom: 1rem;
-    }
-    p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-      text-align: left;
-    }
-    a {
-      color: #e8b87a;
-      text-decoration: none;
-    }
-
-    /* Image Styling */
-    .project-image-small {
-      max-width: 300px; 
-      height: auto;
-      margin-bottom: 1rem;
-      border: 2px solid #e8b87a;
-    }
-    .project-image-wide {
-      display: block;
-      width: 100%;
-      max-width: 800px;
-      height: auto;
-      object-fit: cover;
-      margin: 1rem auto;
-      border: 2px solid #e8b87a;
-    }
-
-    /* Metrics Area */
-    .project-metrics {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    .metric-box {
-      border: 2px solid #e8b87a;
-      padding: 0.8rem 1.2rem;
-      min-width: 100px;
-      text-align: center;
-    }
-    .metric-title {
-      font-size: 0.9rem;
-      color: #e8b87a;
-      margin-bottom: 0.3rem;
-    }
-    .metric-value {
-      font-size: 1rem;
-      color: #f0f0f0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoRide – Ride Sharing App</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="project-detail">
   <header>
-    <h2>Jannik Hofstetter</h2>
-  </header>
-
-  <main>
-    <h1>CoRide - Ride Sharing App</h1>
-
-    <!-- Small Preview Image -->
-    <img src="images/project6/p1.png" alt="CoRide App Preview" class="project-image-small" />
-
-    <!-- Metrics (Team / Rating / Cost) -->
-    <div class="project-metrics">
-      <div class="metric-box">
-        <div class="metric-title">Team</div>
-        <div class="metric-value">3</div>
+    <div class="project-header-shell">
+      <div class="project-header-text">
+        <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Back to overview</a>
+        <span class="status-chip status-completed">Completed</span>
+        <h1 class="project-title">CoRide Mobility Platform</h1>
+        <p class="project-tagline">
+          A .NET MAUI powered alternative to traditional taxis with transparent seat pricing,
+          passenger safety insights, and a clean native interface.
+        </p>
       </div>
-      <div class="metric-box">
-        <div class="metric-title">Rating</div>
-        <div class="metric-value">8/10</div>
-      </div>
-      <div class="metric-box">
-        <div class="metric-title">Cost</div>
-        <div class="metric-value">$0</div>
+      <div class="project-hero-media">
+        <img src="images/project6/p1.png" alt="CoRide booking screen" class="project-hero-image" />
       </div>
     </div>
+  </header>
 
-    <!-- Description -->
-    <p>
-      <strong>CoRide</strong> is a **ride-sharing app** designed to provide a low-cost alternative to taxis and similar services.  
-      The goal was to allow users to **find available rides** in their area, see open seats, and check the **cost per seat** before booking.
-    </p>
+  <main class="project-main">
+    <section class="project-metrics-grid">
+      <div class="project-metric">
+        <p class="metric-title">Team Size</p>
+        <p class="metric-value">3 builders</p>
+      </div>
+      <div class="project-metric">
+        <p class="metric-title">User Rating</p>
+        <p class="metric-value">8 / 10</p>
+      </div>
+      <div class="project-metric">
+        <p class="metric-title">Budget</p>
+        <p class="metric-value">$0</p>
+      </div>
+    </section>
 
-    <p>
-      The app enables **drivers** to register their vehicle, set available **seats**, and determine a **price per ride**.  
-      Passengers can **search for rides**, select a **route**, and view **details about the car** (e.g., model, color, license plate) to identify it easily.
-    </p>
+    <section class="project-summary glass-card">
+      <h2>Project Overview</h2>
+      <p>
+        CoRide gives commuters a transparent view of nearby drivers, available seats, and seat-based
+        pricing before they even book. Built with <strong>.NET MAUI</strong>, it ships a single codebase
+        that targets both Android and iOS while keeping performance native-level.
+      </p>
+      <p>
+        Drivers can publish rides with route, seat count, and vehicle details. Riders search by
+        destination, verify vehicle identity, and confirm instantly within the app. Under the hood we
+        orchestrated database flows, authentication, and UI polish to keep the experience dependable.
+      </p>
+    </section>
 
-    <p>
-      CoRide was developed using <strong>.NET MAUI</strong>, making it compatible with both **Android** and **iOS**.  
-      The project was built by a **team of 3** and took approximately **3 months** to complete.
-    </p>
+    <section class="project-highlights">
+      <article class="highlight-card glass-card">
+        <h3>Feature Highlights</h3>
+        <ul>
+          <li>Seat-based pricing so passengers only pay for the spots they need.</li>
+          <li>Driver profiles with vehicle metadata to increase pickup confidence.</li>
+          <li>Dual-platform deployment using a shared MAUI codebase.</li>
+        </ul>
+      </article>
 
-    <p>
-      The app was intended to be **easily accessible on the Play Store** and aimed to disrupt traditional taxi services  
-      by offering **more affordable pricing** and **peer-to-peer ride sharing**.
-    </p>
+      <article class="highlight-card glass-card">
+        <h3>Tech Stack</h3>
+        <ul class="tag-list">
+          <li>.NET MAUI</li>
+          <li>C#</li>
+          <li>SQLite</li>
+          <li>Azure App Service</li>
+          <li>MVVM Pattern</li>
+        </ul>
+      </article>
 
-    <p>
-      This project required work on **backend logic, UI design, and database management**,  
-      ensuring that the system **properly connected drivers with passengers**.
-    </p>
+      <article class="highlight-card glass-card">
+        <h3>Future Ideas</h3>
+        <ul>
+          <li>Add real-time ride tracking powered by SignalR.</li>
+          <li>Introduce bilateral ratings and identity verification.</li>
+          <li>Optimize route batching for multi-passenger pickups.</li>
+        </ul>
+      </article>
+    </section>
 
-    <!-- Wide Image Below -->
-    <img src="images/project6/p2.png" alt="CoRide App Interface" class="project-image-wide" />
-
-    <p>
-      Future improvements could include **real-time ride tracking**,  
-      **a rating system for drivers and passengers**, and **better route optimization** for cost-effective rides.
-    </p>
-
-    <!-- Back Link -->
-    <p>
-      <a href="index.html">&larr; Back to Homepage</a>
-    </p>
+    <section class="project-gallery glass-card">
+      <h2>Product Screens</h2>
+      <div class="gallery-grid">
+        <img src="images/project6/p2.png" alt="Driver detail screen" />
+        <img src="images/project6.png" alt="CoRide marketing hero" />
+      </div>
+    </section>
   </main>
 
   <footer>

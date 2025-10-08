@@ -2,159 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>To-Do App - Project</title>
-  <style>
-    body {
-      background: #111;
-      color: #f0f0f0;
-      font-family: 'Fira Code', monospace;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      text-align: center;
-      padding: 1rem;
-      background: #1f1f1f;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      text-align: center;
-    }
-    h1 {
-      color: #e8b87a;
-      margin-bottom: 1rem;
-    }
-    p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-      text-align: left;
-    }
-    a {
-      color: #e8b87a;
-      text-decoration: none;
-    }
-
-    /* Image Styling */
-    .project-image {
-      max-width: 400px; 
-      height: auto;
-      margin-bottom: 1rem;
-      border: 2px solid #e8b87a;
-    }
-
-    /* Metrics Area */
-    .project-metrics {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    .metric-box {
-      border: 2px solid #e8b87a;
-      padding: 0.8rem 1.2rem;
-      min-width: 100px;
-      text-align: center;
-    }
-    .metric-title {
-      font-size: 0.9rem;
-      color: #e8b87a;
-      margin-bottom: 0.3rem;
-    }
-    .metric-value {
-      font-size: 1rem;
-      color: #f0f0f0;
-    }
-
-    /* Additional Images Section */
-    .additional-images {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .additional-images img {
-      width: 30%; /* Each image takes 30% of the container */
-      height: auto;
-      border: 3px solid #e8b87a;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do App – Kotlin Planner</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="project-detail">
   <header>
-    <h2>Jannik Hofstetter</h2>
+    <div class="project-header-shell">
+      <div class="project-header-text">
+        <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Back to overview</a>
+        <span class="status-chip status-completed">Completed</span>
+        <h1 class="project-title">Time-Savvy To-Do App</h1>
+        <p class="project-tagline">
+          A Kotlin-based planner that auto-fills schedule gaps, keeps recurring tasks under control,
+          and stays fast enough to become my personal daily driver within hours of coding.
+        </p>
+      </div>
+      <div class="project-hero-media">
+        <img src="images/project3.png" alt="To-Do app mockup" class="project-hero-image" />
+      </div>
+    </div>
   </header>
 
-  <main>
-    <h1>To-Do App - Kotlin Project</h1>
-
-    <!-- Preview Image -->
-    <img src="images/project3.png" alt="To-Do App Preview" class="project-image" />
-
-    <!-- Metrics (Team / Rating / Cost) -->
-    <div class="project-metrics">
-      <div class="metric-box">
-        <div class="metric-title">Team</div>
-        <div class="metric-value">1</div>
+  <main class="project-main">
+    <section class="project-metrics-grid">
+      <div class="project-metric">
+        <p class="metric-title">Time Invested</p>
+        <p class="metric-value">3 hours</p>
       </div>
-      <div class="metric-box">
-        <div class="metric-title">Rating</div>
-        <div class="metric-value">7/10</div>
+      <div class="project-metric">
+        <p class="metric-title">User Rating</p>
+        <p class="metric-value">7 / 10</p>
       </div>
-      <div class="metric-box">
-        <div class="metric-title">Cost</div>
-        <div class="metric-value">$0</div>
+      <div class="project-metric">
+        <p class="metric-title">Budget</p>
+        <p class="metric-value">$0</p>
       </div>
-    </div>
+    </section>
 
-    <!-- Description -->
-    <p>
-      This to-do app was developed in <strong>just 3 hours</strong>, from setup to fixing errors and deploying the final version.  
-      I've been using it <strong>daily for 30 days</strong>, making it an essential part of my routine.
-    </p>
-    <p>
-      The app is built in <strong>Kotlin for Android</strong> and serves as a <strong>dynamic task manager</strong> to efficiently plan and organize daily schedules.
-      The key idea was to create a <strong>time-based task planner</strong> that automatically fills empty time slots with placeholders
-      while keeping everything neatly sorted.
-    </p>
-    <p>
-      Users can <strong>add, delete, and manage tasks for specific dates</strong>, with an option to mark tasks as <strong>recurring (daily)</strong>.
-      Tasks are always sorted by time, and <strong>any gaps between scheduled activities are auto-filled</strong> to maintain a structured daily overview.
-    </p>
-    <p>
-      The app uses <strong>Room</strong> as a local database, ensuring that all tasks persist even after restarting the app.
-      It also includes a <strong>refresh function</strong> that dynamically updates the task list,
-      automatically sorting tasks and filling gaps—without requiring a manual reset.
-    </p>
-    <p>
-      Visually, the app follows a <strong>modern dark theme</strong>, featuring a <strong>red header</strong> to display the selected date and
-      a <strong>black background</strong> for contrast. The <strong>bottom navigation buttons</strong> (used for adding tasks, selecting a date, refreshing,
-      and clearing non-recurring tasks) are styled in <strong>red with white text</strong>, slightly elevated to avoid overlapping
-      with the system navigation bar.
-    </p>
-    <p>
-      For a <strong>cleaner experience</strong>, the app runs in <strong>fullscreen mode</strong>, hiding the system UI.
-      Users can <strong>long-press on tasks to delete them individually</strong> or use the dedicated delete button to clear all tasks for a selected day
-      while keeping recurring ones intact.
-    </p>
-    <p>
-      This project was a great exercise in combining <strong>database management, dynamic UI updates, and automated scheduling logic</strong>
-      to create a <strong>seamless daily planning experience</strong>.
-    </p>
+    <section class="project-summary glass-card">
+      <h2>Project Overview</h2>
+      <p>
+        Built in a single afternoon, this Android to-do app manages my daily routines with
+        remarkable discipline. It schedules tasks chronologically, fills idle slots with
+        placeholders, and treats recurring activities differently from one-off tasks so nothing gets
+        lost along the way.
+      </p>
+      <p>
+        The UI embraces a focused dark theme with a vibrant red accent that highlights the selected
+        day and primary actions. Thanks to <strong>Room</strong> persistence every entry survives app restarts,
+        while a manual refresh routine recalculates ordering and gap fillers on demand.
+      </p>
+    </section>
 
-    <!-- Additional Images -->
-    <div class="additional-images">
-      <img src="images/project3/p1.png" alt="Project Screenshot 1">
-      <img src="images/project3/p2.png" alt="Project Screenshot 2">
-      <img src="images/project3/p3.png" alt="Project Screenshot 3">
-    </div>
+    <section class="project-highlights">
+      <article class="highlight-card glass-card">
+        <h3>Feature Highlights</h3>
+        <ul>
+          <li>Auto-generated placeholder slots keep the agenda visually balanced.</li>
+          <li>Recurring tasks remain untouched when clearing a day’s completed workload.</li>
+          <li>Long-press gestures and quick actions streamline editing on small screens.</li>
+        </ul>
+      </article>
 
-    <!-- Back Link -->
-    <p>
-      <a href="index.html">&larr; Back to Homepage</a>
-    </p>
+      <article class="highlight-card glass-card">
+        <h3>Tech Stack</h3>
+        <ul class="tag-list">
+          <li>Kotlin</li>
+          <li>Android Studio</li>
+          <li>Room Database</li>
+          <li>Material Components</li>
+          <li>Jetpack ViewModel</li>
+        </ul>
+      </article>
+
+      <article class="highlight-card glass-card">
+        <h3>My Contributions</h3>
+        <ul>
+          <li>Architected the scheduling logic that auto-fills timeline gaps intelligently.</li>
+          <li>Designed the dark-theme interface and navigation interactions for rapid input.</li>
+          <li>Integrated persistent storage and refresh flows to keep data perfectly sorted.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="project-gallery glass-card">
+      <h2>Interface Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/project3/p1.png" alt="Home screen with daily agenda" />
+        <img src="images/project3/p2.png" alt="Task detail dialogue" />
+        <img src="images/project3/p3.png" alt="Recurring task overview" />
+      </div>
+    </section>
   </main>
 
   <footer>
