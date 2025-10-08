@@ -19,11 +19,18 @@
   <header>
     <div class="header-content">
       <h1 class="title animate-hero">JANNIK HOFSTETTER</h1>
-      <p class="subtitle">Personal Website</p>
+      <p class="subtitle">AI Developer &amp; Research Student</p>
+      <p class="vision-line">
+        Driven by curiosity, structure, and innovation — I build systems that combine human
+        intention with machine precision.
+      </p>
     </div>
     <!-- Profile Picture -->
     <div class="profile-pic-header">
-      <img src="images/profilepicture.png" alt="Profile Picture of Jannik" />
+      <img
+        src="images/profilepicture.png"
+        alt="Portrait of Jannik Hofstetter"
+      />
     </div>
     <!-- Typewriter Introduction -->
     <div class="intro-typewriter">
@@ -33,6 +40,57 @@
 
   <!-- Main Content -->
   <main>
+    <!-- About & Education -->
+    <section class="section about-section">
+      <h2>About &amp; Education</h2>
+      <div class="about-grid">
+        <article class="info-card glass-card">
+          <h3>Profile</h3>
+          <p>
+            I love translating complex goals into reliable digital experiences – from automated
+            trading sandboxes to AI-assisted document analysis. My projects pair disciplined
+            engineering with playful experimentation so ideas can ship fast without losing quality.
+          </p>
+        </article>
+        <article class="info-card glass-card">
+          <h3>HTL Krems – Informatics (2020–2025)</h3>
+          <ul class="detail-list">
+            <li><strong>Level:</strong> EQF 6 graduation path focused on applied computer science.</li>
+            <li>
+              <strong>Focus:</strong> Artificial intelligence, software engineering, networking, and
+              automation projects with industry partners.
+            </li>
+            <li>
+              <strong>Diploma Thesis:</strong> Automatic financial document classification using LLMs
+              and DONUT OCR in cooperation with w.e.b.
+            </li>
+            <li>
+              <strong>Matura Subjects:</strong> Mathematics, English (B2+ – advanced), Artificial
+              Intelligence.
+            </li>
+          </ul>
+        </article>
+        <article class="info-card glass-card">
+          <h3>Strength Areas</h3>
+          <ul class="detail-list">
+            <li>Advanced mathematics across algebra, statistics, probability, and analysis.</li>
+            <li>AI &amp; ML specialization throughout the final HTL year with production pilots.</li>
+            <li>Designing structured systems that still leave space for creative exploration.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Language Skills -->
+    <section class="section language-section">
+      <h2>Language Skills</h2>
+      <div class="language-chips">
+        <span class="language-chip">🇩🇪 German — native</span>
+        <span class="language-chip">🇬🇧 English — B2+ (advanced Matura)</span>
+        <span class="language-chip">🇷🇺 Russian — actively learning</span>
+      </div>
+    </section>
+
     <!-- Special Knowledge -->
     <section class="section special-knowledge">
       <h2>Special Knowledge</h2>
@@ -50,6 +108,10 @@
           <div class="knowledge-right">SDXL, Hunyuan, A1111, Fooocus, Ollama</div>
         </div>
         <div class="knowledge-row">
+          <div class="knowledge-left">Advanced Mathematics</div>
+          <div class="knowledge-right">Algebra, Statistics, Probability, Analysis</div>
+        </div>
+        <div class="knowledge-row">
           <div class="knowledge-left">Blockchain & Crypto</div>
           <div class="knowledge-right">Use of APIs & JSON</div>
         </div>
@@ -64,6 +126,27 @@
     <section class="section job-experience">
       <h2>Job Experience</h2>
       <div class="job-list">
+        <!-- 0) Austrian Red Cross Civil Service -->
+        <div class="job-block">
+          <span class="status-chip status-ongoing">Ongoing</span>
+          <h3 class="job-title">ÖRK Zivildienst – Waidhofen a. d. Thaya</h3>
+          <p class="job-dates">07/2025 - 03/2026</p>
+          <p class="job-description">
+            Supporting the Austrian Red Cross with patient transport logistics, emergency response
+            readiness, and community care routines while completing my civilian service.
+          </p>
+          <div class="job-metrics">
+            <div class="metric-box">
+              <div class="metric-title">Focus</div>
+              <div class="metric-value">Rescue & Care</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-title">Location</div>
+              <div class="metric-value">Waidhofen/Thaya</div>
+            </div>
+          </div>
+        </div>
+
         <!-- 1) Conen Waidhofen -->
         <div class="job-block">
           <h3 class="job-title">Conen Wohnstudio</h3>
@@ -127,69 +210,79 @@
     </section>
   
     <section class="section projects">
-  
+      <h2>Projects</h2>
+      <!-- Legend -->
+      <div class="project-legend">
+        <div class="legend-item">
+          <span class="legend-bar legend-completed"></span> Finished
+        </div>
+        <div class="legend-item">
+          <span class="legend-bar legend-ongoing"></span> Ongoing
+        </div>
+      </div>
 
-  <h2>Projects</h2>
-  <!-- Legend -->
-  <div class="project-legend">
-    <div class="legend-item">
-      <span class="legend-bar legend-completed"></span> Finished
-    </div>
-    <div class="legend-item">
-      <span class="legend-bar legend-ongoing"></span> Ongoing
-    </div>
-  </div>
+      <div class="projects-container">
+        <!-- Project 1 - Crypto Project (ONGOING) -->
+        <a class="project-card project-ongoing" href="project1.html">
+          <img src="images/project1.png" alt="Project 1" />
+          <h3>Elster Crypto Scout</h3>
+          <p class="project-description">Automated meme-coin paper trading playbook.</p>
+        </a>
 
-  <div class="projects-container">
-    
-    <!-- Project 1 - Crypto Project (ONGOING) -->
-    <a class="project-card project-ongoing" href="project1.html">
-      <img src="images/project1.png" alt="Project 1" />
-      <h3>Crypto Project</h3>
-      <p class="project-description">Short description of Project 1</p>
-    </a>
+        <!-- Project 2 - AIvour (COMPLETED) -->
+        <a class="project-card project-completed" href="project2.html">
+          <img src="images/project2.png" alt="Project 2" />
+          <h3>AIvour Prompt Studio</h3>
+          <p class="project-description">Shopify storefront for bespoke AI art orders.</p>
+        </a>
 
-    <!-- Project 2 - AIvour (COMPLETED) -->
-    <a class="project-card project-completed" href="project2.html">
-      <img src="images/project2.png" alt="Project 2" />
-      <h3>AIvour</h3>
-      <p class="project-description">Short description of Project 2</p>
-    </a>
+        <!-- Project 3 - To-Do App (COMPLETED) -->
+        <a class="project-card project-completed" href="project3.html">
+          <img src="images/project3.png" alt="Project 3" />
+          <h3>Time-Savvy Planner</h3>
+          <p class="project-description">Kotlin agenda with smart gap filling.</p>
+        </a>
 
-    <!-- Project 3 - To-Do App (COMPLETED) -->
-    <a class="project-card project-completed" href="project3.html">
-      <img src="images/project3.png" alt="Project 3" />
-      <h3>To-Do App</h3>
-      <p class="project-description">Short description of Project 3</p>
-    </a>
+        <!-- Project 4 - Diploma Thesis -->
+        <a class="project-card project-ongoing" href="project4.html">
+          <img src="images/project4.png" alt="Project 4" />
+          <h3>KI Modell zur Formularevaluierung</h3>
+          <p class="project-description">Diplomarbeit für Dokumentprüfung & Extraktion.</p>
+        </a>
 
-    <!-- Project 4 - Document Classification (ONGOING) -->
-    <a class="project-card project-ongoing" href="project4.html">
-      <img src="images/project4.png" alt="Project 4" />
-      <h3>Document Classification</h3>
-      <p class="project-description">Short description of Project 4</p>
-    </a>
+        <a class="project-card project-completed" href="project5.html">
+          <img src="images/project5.jpeg" alt="Project 5" />
+          <h3>AI Social Media Accelerator</h3>
+          <p class="project-description">AI-edited shorts to stress-test new channels.</p>
+        </a>
 
-    <a class="project-card project-completed" href="project5.html">
-      <img src="images/project5.jpeg" alt="Project 5" />
-      <h3>AI Social Media</h3>
-      <p class="project-description">TikTok, YouTube and Instagram</p>
-    </a>
+        <a class="project-card project-completed" href="project6.html">
+          <img src="images/project6.png" alt="Project 6" />
+          <h3>CoRide Mobility</h3>
+          <p class="project-description">.NET MAUI Mitfahr-App mit Sitzpreisen.</p>
+        </a>
 
-    <a class="project-card project-completed" href="project6.html">
-      <img src="images/project6.png" alt="Project 6" />
-      <h3>CoRide</h3>
-      <p class="project-description">Uber alternative .NET MAUI App</p>
-    </a>
+        <a class="project-card project-ongoing" href="project7.html">
+          <img src="images/project5/p1.png" alt="FWTHORN Social Media Analytics" />
+          <h3>FWTHORN Challenge</h3>
+          <p class="project-description">Daily lifestyle videos inspiring healthy habits.</p>
+        </a>
 
-  </div>
-</section>
+        <a class="project-card project-ongoing" href="project8.html">
+          <img src="images/project6/p2.png" alt="JustJoin App prototype" />
+          <h3>JustJoin Activities</h3>
+          <p class="project-description">Geo-based meetups for friends and new faces.</p>
+        </a>
 
+        <a class="project-card project-ongoing" href="project9.html">
+          <img src="images/project3/p2.png" alt="RealityCheck progress charts" />
+          <h3>RealityCheck Insights</h3>
+          <p class="project-description">Weekly nutrition dashboards with forecast graphs.</p>
+        </a>
+      </div>
+    </section>
 
-
-  </div>
-</section>
-
+  </main>
 
   <!-- Footer -->
   <footer>
