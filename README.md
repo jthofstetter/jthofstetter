@@ -1,58 +1,58 @@
 # Portfolio Website
 
-Dieses Repository enthält die Portfolio-Website mit animierten Projektübersichten und Detailseiten.
+This repository contains the portfolio website with animated project overviews and detail pages.
 
-## Projekt lokal starten
-1. Stelle sicher, dass Python installiert ist.
-2. Öffne ein Terminal im Projektordner und starte einen lokalen Server:
+## Run the project locally
+1. Make sure Python is installed.
+2. Open a terminal in the project folder and start a local server:
    ```bash
    python -m http.server 8000
    ```
-3. Rufe im Browser `http://localhost:8000/index.html` auf. Beende den Server mit `Strg+C`.
+3. Visit `http://localhost:8000/index.html` in your browser. Stop the server with `Ctrl+C`.
 
-## Änderungen rückgängig machen
-Wenn du eine Datei wie `style.css` versehentlich geändert hast und wieder auf den letzten Commit zurücksetzen möchtest:
+## Revert changes
+If you accidentally changed a file such as `style.css` and want to revert to the last commit:
 ```bash
 git checkout -- style.css
 ```
-Oder, um alle lokalen Änderungen zu verwerfen:
+Or, to discard all local changes:
 ```bash
 git reset --hard HEAD
 git clean -fd
 ```
-> **Achtung:** Dadurch gehen ungespeicherte Änderungen verloren.
+> **Warning:** This permanently removes uncommitted changes.
 
-## Neuer Branch, Commit & Push
-1. Ziehe den aktuellen Stand vom Remote:
+## Create a branch, commit & push
+1. Pull the latest state from the remote:
    ```bash
    git fetch origin
    git pull
    ```
-2. Erstelle einen neuen Branch für deine Änderung:
+2. Create a new branch for your change:
    ```bash
-   git checkout -b feature/meine-aenderung
+   git checkout -b feature/my-change
    ```
-3. Nimm deine Änderungen vor und prüfe den Status:
+3. Make your edits and check the status:
    ```bash
    git status
    ```
-4. Füge die geänderten Dateien hinzu und committe sie:
+4. Add the modified files and commit them:
    ```bash
    git add .
-   git commit -m "Beschreibe deine Änderung"
+   git commit -m "Describe your change"
    ```
-5. Push den Branch zu GitHub:
+5. Push the branch to GitHub:
    ```bash
-   git push -u origin feature/meine-aenderung
+   git push -u origin feature/my-change
    ```
 
-## Pull-Request erstellen
-1. Öffne das Repository auf GitHub. Nach dem Push erscheint ein Hinweis, dass ein neuer Branch gepusht wurde.
-2. Klicke auf **Compare & pull request** oder gehe zu **Pull requests → New pull request** und wähle deinen Branch als Quelle.
-3. Ergänze Titel und Beschreibung, prüfe die Änderungen und klicke auf **Create pull request**.
+## Open a pull request
+1. Open the repository on GitHub. After the push you will see a notice that a new branch is available.
+2. Click **Compare & pull request** or go to **Pull requests → New pull request** and choose your branch as the source.
+3. Add a title and description, review the changes, and click **Create pull request**.
 
-## GitHub Pages aktualisieren
-1. Merge deinen Branch in den Branch, der für GitHub Pages verwendet wird (z. B. `main`).
-2. Warte, bis GitHub Pages den Build abgeschlossen hat (einige Minuten).
-3. Öffne die URL `https://<username>.github.io/<repository>/`, um die aktualisierte Seite zu sehen.
+## Update GitHub Pages
+1. Merge your branch into the branch used for GitHub Pages (e.g. `main`).
+2. Wait a few minutes for GitHub Pages to finish the build.
+3. Visit `https://<username>.github.io/<repository>/` to see the updated site.
 

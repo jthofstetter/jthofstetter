@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KI Modell zur Formularevaluierung</title>
+  <title>Form Intelligence Engine</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
     rel="stylesheet"
@@ -15,11 +15,11 @@
     <div class="project-header-shell">
       <div class="project-header-text">
         <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Back to overview</a>
-        <span class="status-chip status-ongoing">Diplomarbeit</span>
-        <h1 class="project-title">KI Modell zur Formularevaluierung</h1>
+        <span class="status-chip status-ongoing">In Progress</span>
+        <h1 class="project-title">Form Intelligence Engine</h1>
         <p class="project-tagline">
-          Mein HTL-Diplomarbeitsprojekt: KI-gestützte Formulare erkennen, Felder validieren und
-          Abweichungen transparent für Prüfer:innen sichtbar machen.
+          Our HTL diploma thesis pairs OCR and transformers to recognise document templates,
+          validate critical fields, and highlight deviations for reviewers in one place.
         </p>
       </div>
       <div class="project-hero-media">
@@ -35,42 +35,42 @@
   <main class="project-main">
     <section class="project-metrics-grid">
       <div class="project-metric">
-        <p class="metric-title">Team Size</p>
+        <p class="metric-title">Team</p>
         <p class="metric-value">2 specialists</p>
       </div>
       <div class="project-metric">
-        <p class="metric-title">Confidence</p>
-        <p class="metric-value">9 / 10</p>
+        <p class="metric-title">Focus</p>
+        <p class="metric-value">Document auditing AI</p>
       </div>
       <div class="project-metric">
-        <p class="metric-title">Budget</p>
-        <p class="metric-value">$0 (internal)</p>
+        <p class="metric-title">Stage</p>
+        <p class="metric-value">Diploma thesis build</p>
       </div>
     </section>
 
     <section class="project-summary glass-card">
-      <h2>Projektüberblick</h2>
+      <h2>Project Overview</h2>
       <p>
-        Für unsere Diplomarbeit entwickeln wir ein <strong>KI-Modell zur Formularevaluierung</strong>,
-        das eingescannten Schriftverkehr automatisch erkennt, klassifiziert und die wichtigsten
-        Datenpunkte extrahiert. Jede erkannte Information wird mit dem ursprünglichen OCR-Text
-        abgeglichen, damit Auditor:innen Vertrauen in die Ergebnisse haben.
+        For our diploma thesis we are building a <strong>form intelligence engine</strong> that recognises
+        scanned correspondence, classifies each template, and extracts the key data points auditors
+        care about. Every prediction is cross-checked against the original OCR text so reviewers keep
+        full trust in the automation loop.
       </p>
       <p>
-        Die Lösung besteht aus zwei Modulen: einem Klassifikator zur Dokumenttyp-Erkennung inklusive
-        Feldextraktion sowie einem Analyse-Service, der Abweichungen zwischen KI-Vorhersage und
-        Rohtext hervorhebt. So können wir das System iterativ verbessern und Fehlerfälle gezielt
-        nachtrainieren.
+        The solution is split into two services: a classifier that detects the document type and
+        extracts fields, and an analysis layer that flags mismatches between the AI output and the raw
+        text. This setup keeps training data clean and lets us harden the model as new edge cases
+        appear.
       </p>
     </section>
 
     <section class="project-highlights">
       <article class="highlight-card glass-card">
-        <h3>Projekt-Highlights</h3>
+        <h3>Project Highlights</h3>
         <ul>
-          <li>OCR-Vorverarbeitung inklusive Normalisierung handschriftlicher Ergänzungen.</li>
-          <li>Feinabgestimmte Transformer-Modelle pro Formularvariante.</li>
-          <li>Transparente Confidence-Checks mit Hervorhebung kritischer Felder.</li>
+          <li>OCR pre-processing with clean-up for handwritten annotations.</li>
+          <li>Fine-tuned transformer models per document template.</li>
+          <li>Transparent confidence checks that spotlight risky fields.</li>
         </ul>
       </article>
 
@@ -86,11 +86,11 @@
       </article>
 
       <article class="highlight-card glass-card">
-        <h3>Nächste Schritte</h3>
+        <h3>Next Steps</h3>
         <ul>
-          <li>Edge-Cases durch synthetische Formulare erweitern und neu trainieren.</li>
-          <li>Reviewer-UI mit klaren Abweichungsmarkern für schnelle Entscheidungen.</li>
-          <li>Automatische Retraining-Pipeline für kontinuierliche Datenqualität.</li>
+          <li>Augment edge cases with synthetic forms and retrain the model.</li>
+          <li>Ship a reviewer UI with highlighted discrepancies for instant clarity.</li>
+          <li>Automate the retraining pipeline to protect data quality over time.</li>
         </ul>
       </article>
     </section>

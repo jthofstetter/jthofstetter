@@ -165,7 +165,7 @@ header::after {
   margin-top: 2.5rem;
   position: relative;
   display: inline-block;
-  padding: 0.6rem;
+  padding: 0.8rem;
   border-radius: 24px;
   background: linear-gradient(135deg, rgba(232, 184, 122, 0.22), rgba(101, 113, 255, 0.12));
   box-shadow: var(--shadow-lg);
@@ -181,7 +181,7 @@ header::after {
 }
 
 .profile-pic-header img {
-  width: clamp(160px, 32vw, 210px);
+  width: clamp(256px, 36vw, 336px);
   height: auto;
   border-radius: 18px;
   border: 2px solid rgba(232, 184, 122, 0.35);
@@ -853,6 +853,24 @@ body.project-detail .back-link:hover::after {
   display: flex;
   flex-direction: column;
   gap: 2.75rem;
+}
+
+/* Harmonised media sizing across project pages */
+.project-hero-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-hero-image {
+  max-width: clamp(260px, 60vw, 520px);
+  max-height: clamp(220px, 60vh, 340px);
+  object-fit: cover;
+}
+
+body.project-detail .project-header-text,
+body.project-detail .project-hero-media {
+  min-width: 0;
 }
 
 .project-metrics-grid {
@@ -1711,6 +1729,10 @@ footer {
 
   body.project-detail .project-hero-media {
     order: 1;
+  }
+
+  body.project-detail .project-tagline {
+    max-width: none;
   }
 
   .project-main {

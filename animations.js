@@ -1,11 +1,11 @@
-/* 
+/*
   animations.js
-  Enthält:
-  1) Typewriter-Effekt für Vorstellung
-  2) Scroll-Effekt für Projekte, Kenntnisse und Job-Blöcke
+  Contains:
+  1) Typewriter effect for the introduction
+  2) Scroll-in effect for projects, knowledge rows, and job blocks
 */
 
-/* 1) Typewriter-Effekt */
+/* 1) Typewriter effect */
 const introSteps = [
   "H","i",","," ",
   "m","y"," ","n","a","m","e"," ","i","s"," ",
@@ -21,7 +21,7 @@ const introSteps = [
   " ","H","o","p","e"," ","y","o","u"," ","e","n","j","o","y"," ","m","y"," ","s","i","t","e","!"
 ];
 
-// Geschwindigkeiten
+// Timings
 const typingSpeed = 50;
 const erasingSpeed = 20;
 const waitTime = 500;
@@ -33,7 +33,7 @@ let typedText = "";
 
 function typeIntroduction() {
   if (currentStepIndex >= introSteps.length) {
-    // Alle Schritte abgearbeitet: Cursor ausblenden
+    // All steps completed: hide the cursor
     introCursor.style.display = "none";
     return;
   }
@@ -61,15 +61,14 @@ function typeIntroduction() {
 document.addEventListener("DOMContentLoaded", () => {
   introductionTextElement = document.getElementById("introduction-text");
   introCursor = document.getElementById("intro-cursor");
-  typeIntroduction(); // Startet die Typewriter-Animation
+  typeIntroduction(); // Start the typewriter animation
 });
 
-
-/* 2) Scroll-Effekt für Projekte, Kenntnisse und Job-Blöcke */
+/* 2) Scroll effect for projects, knowledge rows, and job blocks */
 function handleScrollAnimation() {
   const triggerBottom = (window.innerHeight / 5) * 4;
 
-  // Projektkarten
+  // Project cards
   const projectCards = document.querySelectorAll(".project-card");
   projectCards.forEach((card) => {
     const cardTop = card.getBoundingClientRect().top;
@@ -80,7 +79,7 @@ function handleScrollAnimation() {
     }
   });
 
-  // Besondere Kenntnisse (jede .knowledge-row)
+  // Special knowledge rows
   const knowledgeRows = document.querySelectorAll(".knowledge-row");
   knowledgeRows.forEach((row) => {
     const rowTop = row.getBoundingClientRect().top;
@@ -91,7 +90,7 @@ function handleScrollAnimation() {
     }
   });
 
-  // Job-Blöcke
+  // Job blocks
   const jobBlocks = document.querySelectorAll(".job-block");
   jobBlocks.forEach((block) => {
     const blockTop = block.getBoundingClientRect().top;
