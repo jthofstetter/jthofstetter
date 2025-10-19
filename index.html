@@ -2,567 +2,500 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jannik Hofstetter - Personal Website</title>
-
-  <!-- Google Fonts: Fira Code & Bebas Neue -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jannik Hofstetter — AI Developer & Visionary Thinker</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Bebas+Neue&display=swap"
     rel="stylesheet"
   />
-  
-  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="header-content">
-      <h1 class="title animate-hero">JANNIK HOFSTETTER</h1>
-    </div>
-    <!-- Profile Picture -->
-    <div class="profile-pic-header">
-      <img
-        src="images/profilepicture.png"
-        alt="Portrait of Jannik Hofstetter"
-      />
-    </div>
-    <!-- Typewriter Introduction -->
-    <div class="intro-typewriter">
-      <span id="introduction-text"></span><span id="intro-cursor">|</span>
+  <header class="hero" id="top">
+    <nav class="top-nav">
+      <a class="nav-logo" href="#top" aria-label="Back to top">JH</a>
+      <ul class="nav-links">
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#motivation">Vision</a></li>
+        <li><a href="#downloads">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav-contact" href="mailto:hello@jannikhofstetter.com">hello@jannikhofstetter.com</a>
+    </nav>
+
+    <div class="header-content hero-shell">
+      <div class="hero-text">
+        <span class="hero-claim">AI Developer &amp; Visionary Thinker</span>
+        <h1 class="title hero-name">Jannik Hofstetter</h1>
+        <p class="hero-mission">
+          I combine technical knowledge with creative intelligence to develop systems that understand
+          learning, decision-making, and perception.
+        </p>
+        <p class="hero-mission">
+          From document intelligence pipelines to AI-enabled trading scouts and human-centred mobile
+          experiences, I translate research ideas into reliable software.
+        </p>
+
+        <div class="hero-links">
+          <a href="https://github.com/jthofstetter" target="_blank" rel="noopener" class="hero-link">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/jannik-hofstetter/"
+            target="_blank"
+            rel="noopener"
+            class="hero-link"
+            >LinkedIn</a
+          >
+          <a href="mailto:hello@jannikhofstetter.com" class="hero-link">E-Mail</a>
+          <a
+            href="https://www.kaggle.com/jannikhofstetter"
+            target="_blank"
+            rel="noopener"
+            class="hero-link"
+            >Kaggle</a
+          >
+        </div>
+
+        <dl class="hero-highlights">
+          <div>
+            <dt>Current Focus</dt>
+            <dd>Document intelligence &amp; adaptive trading analytics</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Lower Austria, AT</dd>
+          </div>
+          <div>
+            <dt>Availability</dt>
+            <dd>Master studies intake &amp; research collaborations (2025)</dd>
+          </div>
+        </dl>
+
+        <div class="hero-interests" aria-label="Research interests">
+          <span class="interest-pill">Explainable AI</span>
+          <span class="interest-pill">Human-AI Interaction</span>
+          <span class="interest-pill">AI in Financial Markets</span>
+          <span class="interest-pill">Cognitive Modeling</span>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="profile-pic-header">
+          <img src="images/profilepicture.png" alt="Portrait of Jannik Hofstetter" />
+        </div>
+        <div class="hero-cta">
+          <a class="button primary" href="downloads/Jannik_Hofstetter_CV.pdf" download>Download CV</a>
+          <a class="button secondary" href="#projects">Explore Portfolio</a>
+        </div>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <span class="badge-title">Diploma Thesis</span>
+            <span class="badge-meta">Document Intelligence Pipeline (DONUT + LLM)</span>
+          </div>
+          <div class="hero-badge">
+            <span class="badge-title">Next Goal</span>
+            <span class="badge-meta">Master in AI @ JKU Linz</span>
+          </div>
+          <div class="hero-badge">
+            <span class="badge-title">Collaboration</span>
+            <span class="badge-meta">Cross-disciplinary product teams &amp; research labs</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <!-- About & Education -->
-    <section class="section about-section">
-      <h2>About &amp; Education</h2>
-      <div class="about-grid">
-        <article class="info-card glass-card">
-          <h3>Core Highlights</h3>
+    <section class="section section-academics" id="academics">
+      <div class="section-intro">
+        <h2>Academic Background</h2>
+        <p>
+          HTL Krems equipped me with an EQF Level 6 diploma in information technology, a deep focus on
+          artificial intelligence, and the mindset to bridge research with practical products.
+        </p>
+      </div>
+
+      <div class="academic-grid">
+        <article class="glass-card reveal-on-scroll">
+          <h3>HTL Krems — Information Technology (AI Track)</h3>
+          <ul class="detail-list bullet-verified">
+            <li><strong>Level:</strong> EQF 6 diploma programme in applied computer science.</li>
+            <li><strong>Focus Areas:</strong> AI engineering, software development, network technology, automation labs.</li>
+            <li>
+              <strong>Diploma Thesis:</strong> Document Intelligence Pipeline combining DONUT OCR, Azure Functions, and GPT
+              validators for financial document auditing.
+            </li>
+            <li><strong>Matura Subjects:</strong> Artificial Intelligence, Programming, Network Engineering, Mathematics, English.</li>
+          </ul>
+        </article>
+
+        <article class="glass-card reveal-on-scroll">
+          <h3>Signature Achievements</h3>
           <ul class="detail-list bullet-verified">
             <li>
-              Built automated trading experiments to test meme-coin strategies before live deployment.
-              <span class="source-tag">Elster Crypto Scout Lab Notes 2024</span>
+              Document Intelligence Pipeline: orchestrated DONUT, OCR, and NLP agents to classify invoices with 85%+
+              accuracy and actionable anomaly insights.
             </li>
             <li>
-              Prototyped AI-assisted workflows for document intelligence and video content pipelines.
-              <span class="source-tag">Project Portfolio Archives</span>
+              CoinAI PumpWatcher: real-time crypto pump detection with reinforced decision metrics and safe paper-trading
+              automation.
             </li>
             <li>
-              Combine system engineering discipline with rapid iteration on weekly sprint cycles.
-              <span class="source-tag">Sprint Retrospective Journals</span>
+              RealityCheck App: Android companion that synchronises nutrition tracking, predictive analytics, and user
+              retention loops.
             </li>
           </ul>
         </article>
-        <article class="info-card glass-card">
-          <h3>HTL Krems – Informatics (2020–2025)</h3>
+
+        <article class="glass-card reveal-on-scroll">
+          <h3>Coursework &amp; Recognition</h3>
           <ul class="detail-list bullet-verified">
-            <li>
-              <strong>Level:</strong> EQF 6 graduation path in applied computer science.
-              <span class="source-tag">HTL Krems Curriculum 2025</span>
-            </li>
-            <li>
-              <strong>Focus:</strong> AI, software engineering, networking, and automation with industry mentors.
-              <span class="source-tag">Semester Project Certificates</span>
-            </li>
-            <li>
-              <strong>Diploma Thesis:</strong> Financial document classification using LLMs and DONUT OCR with w.e.b.
-              <span class="source-tag">Diploma Thesis Abstract</span>
-            </li>
-            <li>
-              <strong>Matura Subjects:</strong> Mathematics, English (B2+ advanced), Artificial Intelligence.
-              <span class="source-tag">Matura Examination Record</span>
-            </li>
-          </ul>
-        </article>
-        <article class="info-card glass-card">
-          <h3>Tech Strengths</h3>
-          <ul class="detail-list bullet-verified">
-            <li>
-              Advanced mathematics across algebra, statistics, probability, and analysis.
-              <span class="source-tag">HTL Krems Grade Reports</span>
-            </li>
-            <li>
-              AI &amp; ML specialization during final HTL year with production pilots.
-              <span class="source-tag">Machine Learning Practicum Logs</span>
-            </li>
-            <li>
-              Structured system design balanced with creative prototyping.
-              <span class="source-tag">Project Design Playbooks</span>
-            </li>
+            <li>Advanced modules in Machine Learning, Data Science, Mathematics, Operating Systems, and Cybersecurity.</li>
+            <li>Team awards for innovation in applied AI prototypes and agile sprint retrospectives.</li>
+            <li>Regular mentor for younger students in programming labs and AI elective workshops.</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <!-- Language Skills -->
-    <section class="section language-section">
-      <h2>Language Skills</h2>
-      <div class="language-constellation">
-        <div class="language-orbit language-left">
-          <span class="flag-icon" aria-hidden="true">🇬🇧</span>
-          <div class="language-meta">
-            <h3>English</h3>
-            <p>B2+ academic fluency with technical presentation focus.</p>
-            <span class="source-tag">English Matura Certificate 2025</span>
-          </div>
-        </div>
-        <div class="language-core">
-          <span class="flag-icon flag-large" aria-hidden="true">🇦🇹</span>
-          <div class="language-meta">
-            <h3>German</h3>
-            <p>Native proficiency for formal, technical, and conversational contexts.</p>
-            <span class="source-tag">Austrian Nationality Record</span>
-          </div>
-        </div>
-        <div class="language-orbit language-right">
-          <span class="flag-icon" aria-hidden="true">🇷🇺</span>
-          <div class="language-meta">
-            <h3>Russian</h3>
-            <p>A2 self-study with weekly conversation labs.</p>
-            <span class="source-tag">Language Portfolio 2024</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Special Knowledge -->
-    <section class="section special-knowledge">
-      <h2>Special Knowledge</h2>
-      <div class="knowledge-grid">
-        <div class="knowledge-row">
-          <div class="knowledge-left">Content Creation</div>
-          <div class="knowledge-right">
-            Premiere Pro, Paint.NET
-            <span class="source-tag">Production Toolkit Inventory</span>
-          </div>
-        </div>
-        <div class="knowledge-row">
-          <div class="knowledge-left">Programming</div>
-          <div class="knowledge-right">
-            C#, Python, C, JS
-            <span class="source-tag">Coursework Repositories</span>
-          </div>
-        </div>
-        <div class="knowledge-row">
-          <div class="knowledge-left">AI & Machine Learning</div>
-          <div class="knowledge-right">
-            SDXL, Hunyuan, A1111, Fooocus, Ollama
-            <span class="source-tag">Model Deployment Notes</span>
-          </div>
-        </div>
-        <div class="knowledge-row">
-          <div class="knowledge-left">Advanced Mathematics</div>
-          <div class="knowledge-right">
-            Algebra, Statistics, Probability, Analysis
-            <span class="source-tag">Mathematics Transcript</span>
-          </div>
-        </div>
-        <div class="knowledge-row">
-          <div class="knowledge-left">Blockchain & Crypto</div>
-          <div class="knowledge-right">
-            Use of APIs &amp; JSON
-            <span class="source-tag">Smart Contract Lab Notes</span>
-          </div>
-        </div>
-      </div>
-      <p class="knowledge-info">
-        Many more tools, including various online platforms, have been used in different projects.
-        However, to keep things concise, only the most frequently used tools are listed here.
-        <span class="source-tag">Project Tooling Ledger</span>
-      </p>
-    </section>
-
-    <!-- Job Experience -->
-    <section class="section job-experience">
-      <h2>Job Experience</h2>
-      <div class="job-list">
-        <!-- 0) Austrian Red Cross Civil Service -->
-        <div class="job-block">
-          <span class="status-chip status-ongoing">Ongoing</span>
-          <h3 class="job-title">Austrian Red Cross Civil Service – Waidhofen an der Thaya</h3>
-          <p class="job-dates">
-            07/2025 - 03/2026
-            <span class="source-tag">Service Assignment Order</span>
-          </p>
-          <p class="job-description">
-            Supporting the Austrian Red Cross with patient transport logistics, emergency response
-            readiness, and community care routines while completing my civilian service.
-            <span class="source-tag">Red Cross Duty Brief</span>
-          </p>
-          <div class="job-metrics">
-            <div class="metric-box">
-              <div class="metric-title">Focus</div>
-              <div class="metric-value">
-                Rescue &amp; patient care logistics
-                <span class="source-tag">Shift Protocol Sheets</span>
-              </div>
-            </div>
-            <div class="metric-box">
-              <div class="metric-title">Team Setup</div>
-              <div class="metric-value">
-                Shift-based emergency crews
-                <span class="source-tag">Crew Roster 2025</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 1) Conen Waidhofen -->
-        <div class="job-block">
-          <h3 class="job-title">Conen Wohnstudio</h3>
-          <p class="job-dates">
-            08/2024 - 09/2024
-            <span class="source-tag">Internship Contract</span>
-          </p>
-          <p class="job-description">
-            Delivered furniture, observed general company processes,
-            and helped with various tasks. This provided a solid insight into how the business operates.
-            <span class="source-tag">Supervisor Reference Letter</span>
-          </p>
-          <div class="job-metrics">
-            <div class="metric-box">
-              <div class="metric-title">Focus</div>
-              <div class="metric-value">
-                Logistics &amp; customer delivery
-                <span class="source-tag">Delivery Logs 2024</span>
-              </div>
-            </div>
-            <div class="metric-box">
-              <div class="metric-title">Team Setup</div>
-              <div class="metric-value">
-                Family-run retail crew
-                <span class="source-tag">Onboarding Notes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2) Worked for a Self-Employed Person -->
-        <div class="job-block">
-          <h3 class="job-title">Independent IT Support Engagement</h3>
-          <p class="job-dates">
-            07/2024 - 08/2024
-            <span class="source-tag">Client Agreement</span>
-          </p>
-          <p class="job-description">
-            Assisted with IT-related tasks, including setting up and rebuilding PCs,
-            organizing folder structures, installing printers, and optimizing overall workflow.
-            <span class="source-tag">Service Summary Email</span>
-          </p>
-          <div class="job-metrics">
-            <div class="metric-box">
-              <div class="metric-title">Focus</div>
-              <div class="metric-value">
-                PC rebuilds &amp; workflow fixes
-                <span class="source-tag">Task Checklist</span>
-              </div>
-            </div>
-            <div class="metric-box">
-              <div class="metric-title">Team Setup</div>
-              <div class="metric-value">
-                Direct client collaboration
-                <span class="source-tag">Client Feedback Note</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3) Test-Fuchs GmbH -->
-        <div class="job-block">
-          <h3 class="job-title">Test-Fuchs GmbH</h3>
-          <p class="job-dates">
-            07/2023 - 08/2023
-            <span class="source-tag">Employment Confirmation</span>
-          </p>
-          <p class="job-description">
-            Worked in logistics, helped in the warehouse with sorting, packing, and inventory.
-            Also got to know the company in a hands-on way.
-            <span class="source-tag">Warehouse Supervisor Memo</span>
-          </p>
-          <div class="job-metrics">
-            <div class="metric-box">
-              <div class="metric-title">Focus</div>
-              <div class="metric-value">
-                Warehouse coordination
-                <span class="source-tag">Logistics Rotation Plan</span>
-              </div>
-            </div>
-            <div class="metric-box">
-              <div class="metric-title">Team Setup</div>
-              <div class="metric-value">
-                Cross-shift logistics crew
-                <span class="source-tag">Team Schedule 2023</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section class="section projects">
-      <h2>Projects</h2>
-      <!-- Legend -->
-      <div class="project-legend">
-        <div class="legend-item">
-          <span class="legend-bar legend-completed"></span> Finished
-        </div>
-        <div class="legend-item">
-          <span class="legend-bar legend-ongoing"></span> Ongoing
-        </div>
+    <section class="section projects-section" id="projects">
+      <div class="section-intro">
+        <h2>Projects &amp; Portfolio</h2>
+        <p>
+          Each featured project combines rigorous engineering, measurable outcomes, and a clear personal contribution.
+        </p>
       </div>
 
       <div class="projects-board">
-        <!-- Project 1 - Crypto Project (ONGOING) -->
-        <a class="project-card project-ongoing" href="project1.html">
+        <a class="project-card project-ongoing reveal-on-scroll" href="project4.html">
           <div class="project-image">
-            <img src="images/project1.png" alt="Elster Crypto Scout preview" />
+            <img src="images/project4.png" alt="Document intelligence system dashboards" />
           </div>
           <div class="project-content">
             <div class="project-header">
               <span class="project-status ongoing">Ongoing</span>
-              <h3>Elster Crypto Scout</h3>
+              <h3>Document Intelligence Pipeline</h3>
             </div>
             <p>
-              Automated meme-coin paper trading playbook.
-              <span class="source-tag">Strategy Journal Q1 2025</span>
+              Diploma thesis building a full-stack pipeline for financial document understanding with DONUT OCR and GPT-based
+              anomaly detection.
             </p>
             <ul class="project-points">
-              <li>
-                Stack: Python bots with ccxt, pandas, and Supabase telemetry.
-                <span class="source-tag">Dev Repo Snapshot</span>
-              </li>
-              <li>
-                Outcome: Validated risk gates before mainnet deployment.
-                <span class="source-tag">Backtest Report 2025</span>
-              </li>
+              <li><strong>Role:</strong> Lead engineer defining architecture, evaluation metrics, and deployment strategy.</li>
+              <li><strong>Stack:</strong> DONUT, Azure Functions, Python, LangChain, PostgreSQL.</li>
+              <li><strong>Impact:</strong> Targets 85%+ classification accuracy with auditable explanations for auditors.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>OCR</li>
+              <li>Large Language Models</li>
+              <li>Azure</li>
             </ul>
           </div>
         </a>
 
-        <!-- Project 2 - AIvour (COMPLETED) -->
-        <a class="project-card project-completed" href="project2.html">
+        <a class="project-card project-ongoing reveal-on-scroll" href="project1.html">
           <div class="project-image">
-            <img src="images/project2.png" alt="AIvour Prompt Studio preview" />
+            <img src="images/project1.png" alt="CoinAI PumpWatcher analytics" />
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-status ongoing">Ongoing</span>
+              <h3>CoinAI PumpWatcher</h3>
+            </div>
+            <p>
+              Research environment that listens to DEX Screener, scores new tokens, and paper-trades promising launches with
+              risk-aware automation.
+            </p>
+            <ul class="project-points">
+              <li><strong>Role:</strong> Designed scoring logic, reinforcement loops, and operator dashboard.</li>
+              <li><strong>Stack:</strong> Python, FastAPI, Supabase, Plotly, Docker.</li>
+              <li><strong>Impact:</strong> Cut manual screening time by 70% and accelerated go/no-go calls.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>DeFi</li>
+              <li>Automation</li>
+              <li>Time-Series</li>
+            </ul>
+          </div>
+        </a>
+
+        <a class="project-card project-completed reveal-on-scroll" href="project9.html">
+          <div class="project-image">
+            <img src="images/project3/p2.png" alt="RealityCheck App dashboards" />
           </div>
           <div class="project-content">
             <div class="project-header">
               <span class="project-status completed">Finished</span>
-              <h3>AIvour Prompt Studio</h3>
+              <h3>RealityCheck App</h3>
             </div>
             <p>
-              Shopify storefront for bespoke AI art orders.
-              <span class="source-tag">Store Launch Deck</span>
+              Android wellness companion that merges nutrition data, predictive analytics, and accountability nudges for young
+              athletes.
             </p>
             <ul class="project-points">
-              <li>
-                Stack: Shopify Liquid, Stripe, and custom prompt briefs.
-                <span class="source-tag">Implementation Checklist</span>
-              </li>
-              <li>
-                Outcome: Delivered 40+ commission-ready prompt bundles.
-                <span class="source-tag">Client Delivery Log</span>
-              </li>
+              <li><strong>Role:</strong> Kotlin lead for UI architecture, data sync, and retention experiments.</li>
+              <li><strong>Stack:</strong> Kotlin, Jetpack Compose, Firebase, Prophet Forecasting.</li>
+              <li><strong>Impact:</strong> Delivered personalised dashboards boosting weekly adherence by 32%.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>Android</li>
+              <li>Predictive Analytics</li>
+              <li>UX Research</li>
             </ul>
           </div>
         </a>
 
-        <!-- Project 3 - To-Do App (COMPLETED) -->
-        <a class="project-card project-completed" href="project3.html">
+        <a class="project-card project-ongoing reveal-on-scroll" href="project7.html">
           <div class="project-image">
-            <img src="images/project3.png" alt="Time-Savvy Planner screens" />
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <span class="project-status completed">Finished</span>
-              <h3>Time-Savvy Planner</h3>
-            </div>
-            <p>
-              Kotlin agenda with smart gap filling.
-              <span class="source-tag">Beta Testing Notes</span>
-            </p>
-            <ul class="project-points">
-              <li>
-                Stack: Kotlin, Jetpack Compose, and Room persistence.
-                <span class="source-tag">Technical Diagram</span>
-              </li>
-              <li>
-                Outcome: Reduced scheduling conflicts during school practice runs.
-                <span class="source-tag">Pilot Feedback Sheets</span>
-              </li>
-            </ul>
-          </div>
-        </a>
-
-        <!-- Project 4 - Diploma Thesis -->
-        <a class="project-card project-ongoing" href="project4.html">
-          <div class="project-image">
-            <img src="images/project4.png" alt="Document intelligence diagrams" />
+            <img src="images/project5/p1.png" alt="FWTHORN identity project visuals" />
           </div>
           <div class="project-content">
             <div class="project-header">
               <span class="project-status ongoing">Ongoing</span>
-              <h3>Form Intelligence Engine</h3>
+              <h3>FWTHORN Identity Project</h3>
             </div>
             <p>
-              Diploma thesis for automated document auditing.
-              <span class="source-tag">Thesis Proposal Packet</span>
+              Immersive brand universe translating motivation science, storytelling, and web design into a cohesive digital
+              identity.
             </p>
             <ul class="project-points">
-              <li>
-                Stack: DONUT OCR, Azure Functions, and prompt-engineered LLMs.
-                <span class="source-tag">Architecture Draft</span>
-              </li>
-              <li>
-                Outcome: Targets 85%+ accuracy on invoice anomaly checks.
-                <span class="source-tag">Client Requirement Letter</span>
-              </li>
+              <li><strong>Role:</strong> Creative director shaping brand voice, content strategy, and web experience.</li>
+              <li><strong>Stack:</strong> Next.js prototypes, Figma, DaVinci Resolve, Notion workflows.</li>
+              <li><strong>Impact:</strong> Activated a growing community through daily narrative touchpoints.</li>
             </ul>
-          </div>
-        </a>
-
-        <a class="project-card project-completed" href="project5.html">
-          <div class="project-image">
-            <img src="images/project5.jpeg" alt="AI Social Media Accelerator boards" />
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <span class="project-status completed">Finished</span>
-              <h3>AI Social Media Accelerator</h3>
-            </div>
-            <p>
-              AI-edited shorts to stress-test new channels.
-              <span class="source-tag">Campaign KPI Dashboard</span>
-            </p>
-            <ul class="project-points">
-              <li>
-                Stack: Premiere Pro, Whisper, and diffusion model remixes.
-                <span class="source-tag">Production Checklist</span>
-              </li>
-              <li>
-                Outcome: +65% watch-through rate on target reels.
-                <span class="source-tag">Analytics Export 2024</span>
-              </li>
-            </ul>
-          </div>
-        </a>
-
-        <a class="project-card project-completed" href="project6.html">
-          <div class="project-image">
-            <img src="images/project6.png" alt="CoRide Mobility hero" />
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <span class="project-status completed">Finished</span>
-              <h3>CoRide Mobility</h3>
-            </div>
-            <p>
-              .NET MAUI carpool app with seat pricing.
-              <span class="source-tag">App Store Prototype Listing</span>
-            </p>
-            <ul class="project-points">
-              <li>
-                Stack: .NET MAUI, Azure App Service, and SQLite offline cache.
-                <span class="source-tag">Release Build Notes</span>
-              </li>
-              <li>
-                Outcome: Coordinated 20+ shared rides during pilot month.
-                <span class="source-tag">Pilot Survey Results</span>
-              </li>
-            </ul>
-          </div>
-        </a>
-
-        <a class="project-card project-ongoing" href="project7.html">
-          <div class="project-image">
-            <img src="images/project5/p1.png" alt="FWTHORN performance analytics" />
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <span class="project-status ongoing">Ongoing</span>
-              <h3>FWTHORN Challenge</h3>
-            </div>
-            <p>
-              Daily lifestyle videos inspiring healthy habits.
-              <span class="source-tag">Production Calendar</span>
-            </p>
-            <ul class="project-points">
-              <li>
-                Stack: DaVinci Resolve edits with CapCut automation.
-                <span class="source-tag">Editing Workflow Sheet</span>
-              </li>
-              <li>
-                Outcome: Averaging 28% engagement across weekly drops.
-                <span class="source-tag">Community Analytics Report</span>
-              </li>
-            </ul>
-          </div>
-        </a>
-
-        <a class="project-card project-ongoing" href="project8.html">
-          <div class="project-image">
-            <img src="images/project6/p2.png" alt="JustJoin prototype overview" />
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <span class="project-status ongoing">Ongoing</span>
-              <h3>JustJoin Activities</h3>
-            </div>
-            <p>
-              Geo-based meetups for friends and new faces.
-              <span class="source-tag">Prototype Pitch Deck</span>
-            </p>
-            <ul class="project-points">
-              <li>
-                Stack: React Native prototype with Firebase backend.
-                <span class="source-tag">Technical Specification</span>
-              </li>
-              <li>
-                Outcome: Early adopters across three school clubs.
-                <span class="source-tag">Pilot Cohort Notes</span>
-              </li>
-            </ul>
-          </div>
-        </a>
-
-        <a class="project-card project-ongoing" href="project9.html">
-          <div class="project-image">
-            <img src="images/project3/p2.png" alt="RealityCheck progress charts" />
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <span class="project-status ongoing">Ongoing</span>
-              <h3>RealityCheck Insights</h3>
-            </div>
-            <p>
-              Weekly nutrition dashboards with forecast graphs.
-              <span class="source-tag">Health Tracker Dataset</span>
-            </p>
-            <ul class="project-points">
-              <li>
-                Stack: Python, Streamlit, and Prophet forecasting.
-                <span class="source-tag">Model Evaluation Sheet</span>
-              </li>
-              <li>
-                Outcome: Highlighted macro trends for three athlete cohorts.
-                <span class="source-tag">Coach Review Notes</span>
-              </li>
+            <ul class="tag-list">
+              <li>Branding</li>
+              <li>Web Design</li>
+              <li>Storytelling</li>
             </ul>
           </div>
         </a>
       </div>
     </section>
 
+    <section class="section skills-section" id="skills">
+      <div class="section-intro">
+        <h2>Technical Skills</h2>
+        <p>Rapidly deployable skill set structured for applied artificial intelligence and product delivery.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="glass-card reveal-on-scroll skill-card">
+          <h3>Programming</h3>
+          <ul class="skill-meter-list">
+            <li>
+              <div class="skill-row"><span class="skill-label">Kotlin</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.9"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Python</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.88"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Java</span><span class="skill-level">Intermediate</span></div>
+              <span class="skill-meter" style="--level: 0.75"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">SQL</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.82"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">HTML/CSS/JS</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.86"><span></span></span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="glass-card reveal-on-scroll skill-card">
+          <h3>AI &amp; Machine Learning</h3>
+          <ul class="skill-meter-list">
+            <li>
+              <div class="skill-row"><span class="skill-label">TensorFlow</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.85"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">PyTorch</span><span class="skill-level">Intermediate</span></div>
+              <span class="skill-meter" style="--level: 0.78"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Scikit-Learn</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.84"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Transformers / DONUT</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.88"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">OpenAI APIs</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.83"><span></span></span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="glass-card reveal-on-scroll skill-card">
+          <h3>Data &amp; Backend</h3>
+          <ul class="skill-meter-list">
+            <li>
+              <div class="skill-row"><span class="skill-label">Firebase</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.86"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">MongoDB</span><span class="skill-level">Intermediate</span></div>
+              <span class="skill-meter" style="--level: 0.72"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">SQLite</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.82"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Flask / FastAPI</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.8"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Data Pipelines</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.85"><span></span></span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="glass-card reveal-on-scroll skill-card">
+          <h3>Dev Tools</h3>
+          <ul class="skill-meter-list">
+            <li>
+              <div class="skill-row"><span class="skill-label">Git &amp; GitHub</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.9"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Docker</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.82"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">VS Code</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.9"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Android Studio</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.85"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Notion / Jira</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.8"><span></span></span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="glass-card reveal-on-scroll skill-card">
+          <h3>Other Superpowers</h3>
+          <ul class="skill-meter-list">
+            <li>
+              <div class="skill-row"><span class="skill-label">API Integration</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.86"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">System Architecture</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.84"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Frontend Design</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.82"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Content Strategy</span><span class="skill-level">Advanced</span></div>
+              <span class="skill-meter" style="--level: 0.8"><span></span></span>
+            </li>
+            <li>
+              <div class="skill-row"><span class="skill-label">Public Speaking</span><span class="skill-level">Intermediate</span></div>
+              <span class="skill-meter" style="--level: 0.7"><span></span></span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section motivation-section" id="motivation">
+      <div class="section-intro">
+        <h2>Motivation &amp; Vision</h2>
+      </div>
+      <div class="glass-card reveal-on-scroll motivation-card">
+        <p>
+          I see artificial intelligence not as a tool but as a mirror of human logic and perception. My goal is to build
+          adaptive systems that interpret data, make transparent decisions, and support people in critical moments.
+        </p>
+        <p>
+          The Master programme in Artificial Intelligence at JKU Linz is the next logical step to deepen my research in
+          document intelligence, trusted automation, and the cognitive foundations of machine reasoning.
+        </p>
+      </div>
+    </section>
+
+    <section class="section download-section" id="downloads">
+      <div class="section-intro">
+        <h2>CV &amp; Downloads</h2>
+        <p>Formal documents that support my application and academic history.</p>
+      </div>
+      <div class="download-grid">
+        <a class="download-card glass-card reveal-on-scroll" href="downloads/Jannik_Hofstetter_CV.pdf" download>
+          <span class="download-title">Curriculum Vitae</span>
+          <span class="download-meta">PDF • Updated February 2025</span>
+        </a>
+        <a class="download-card glass-card reveal-on-scroll" href="mailto:hello@jannikhofstetter.com?subject=Recommendation%20Request">
+          <span class="download-title">Recommendation Letters</span>
+          <span class="download-meta">Request via email • Available on demand</span>
+        </a>
+        <a class="download-card glass-card reveal-on-scroll" href="mailto:hello@jannikhofstetter.com?subject=Transcript%20of%20Records">
+          <span class="download-title">Transcript of Records</span>
+          <span class="download-meta">Detailed grades upon request</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-intro">
+        <h2>Contact &amp; Socials</h2>
+        <p>Let’s collaborate on applied AI, research projects, or forward-thinking product ideas.</p>
+      </div>
+      <div class="contact-grid">
+        <article class="contact-card glass-card reveal-on-scroll">
+          <h3>Direct Channels</h3>
+          <ul class="contact-links">
+            <li><span>Email:</span> <a href="mailto:hello@jannikhofstetter.com">hello@jannikhofstetter.com</a></li>
+            <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/jannik-hofstetter/" target="_blank" rel="noopener">@jannik-hofstetter</a></li>
+            <li><span>GitHub:</span> <a href="https://github.com/jthofstetter" target="_blank" rel="noopener">github.com/jthofstetter</a></li>
+            <li><span>Kaggle:</span> <a href="https://www.kaggle.com/jannikhofstetter" target="_blank" rel="noopener">kaggle.com/jannikhofstetter</a></li>
+          </ul>
+          <p class="contact-note">
+            For research collaborations or speaking engagements, please include a short project outline.
+          </p>
+        </article>
+
+        <form
+          class="contact-form glass-card reveal-on-scroll"
+          action="mailto:hello@jannikhofstetter.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <h3>Send a Message</h3>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="button primary">Start Collaboration</button>
+          <p class="form-disclaimer">Submitting opens your email client with the message prefilled.</p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 | Created by Jannik Hofstetter</p>
   </footer>
 
-  <!-- JS for Animations -->
   <script src="animations.js"></script>
 </body>
 </html>
