@@ -6,31 +6,62 @@
 */
 
 /* 1) Typewriter effect */
-const introMessage =
-  "Hi, I'm Jannik — AI developer crafting document intelligence, financial decision pipelines, and human-centered automation.";
-const typingSpeed = 42;
+const introSteps = [
+  "H","i",","," ",
+  "m","y"," ","n","a","m","e"," ","i","s"," ",
+  "J","a","z","BKSP","BKSP","a","n","n","i","k",",",
+  " ","I","'","m"," ","1","9"," ","y","e","a","r","s"," ","o","l","d",",",
+  " ","a","n","d"," ","v","e","r","y"," ",
+  "e","n","t","h","u","s","i","a","BKSP","BKSP","BKSP","s","i","a","s","t","i","c"," ",
+  "a","b","o","u","t"," ","A","I",".",
+  " ","I"," ","l","o","v","e"," ","c","o","d","i","n","g"," ",
+  "a","n","d"," ","e","x","p","l","o","r","i","n","g"," ",
+  "n","e","w"," ","t","e","c","h","n","o","l","o","g","i","e","s",".",
+  "WAIT",
+  " ","H","o","p","e"," ","y","o","u"," ","e","n","j","o","y"," ","m","y"," ","s","i","t","e","!"
+];
 
+// Timings
+const typingSpeed = 50;
+const erasingSpeed = 20;
+const waitTime = 500;
+
+let currentStepIndex = 0;
 let introductionTextElement;
 let introCursor;
 let typedText = "";
-let charIndex = 0;
 
 function typeIntroduction() {
-  if (charIndex >= introMessage.length) {
+  if (currentStepIndex >= introSteps.length) {
+    // All steps completed: hide the cursor
     introCursor.style.display = "none";
     return;
   }
 
-  typedText += introMessage.charAt(charIndex);
-  introductionTextElement.textContent = typedText;
-  charIndex++;
-  setTimeout(typeIntroduction, typingSpeed);
+  const currentStep = introSteps[currentStepIndex];
+
+  if (currentStep === "BKSP") {
+    typedText = typedText.slice(0, -1);
+    introductionTextElement.textContent = typedText;
+    currentStepIndex++;
+    setTimeout(typeIntroduction, erasingSpeed);
+
+  } else if (currentStep === "WAIT") {
+    currentStepIndex++;
+    setTimeout(typeIntroduction, waitTime);
+
+  } else {
+    typedText += currentStep;
+    introductionTextElement.textContent = typedText;
+    currentStepIndex++;
+    setTimeout(typeIntroduction, typingSpeed);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   introductionTextElement = document.getElementById("introduction-text");
   introCursor = document.getElementById("intro-cursor");
-  typeIntroduction();
+  typeIntroduction(); // Start the typewriter animation
 });
 
 /* 2) Scroll effect for projects, knowledge rows, and job blocks */
