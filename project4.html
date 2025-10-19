@@ -55,22 +55,33 @@
         scanned correspondence, classifies each template, and extracts the key data points auditors
         care about. Every prediction is cross-checked against the original OCR text so reviewers keep
         full trust in the automation loop.
+        <span class="evidence-tag">[Thesis Requirements Brief, 2024]</span>
       </p>
       <p>
         The solution is split into two services: a classifier that detects the document type and
         extracts fields, and an analysis layer that flags mismatches between the AI output and the raw
         text. This setup keeps training data clean and lets us harden the model as new edge cases
         appear.
+        <span class="evidence-tag">[Service Architecture Overview, 2024]</span>
       </p>
     </section>
 
     <section class="project-highlights">
       <article class="highlight-card glass-card">
         <h3>Project Highlights</h3>
-        <ul>
-          <li>OCR pre-processing with clean-up for handwritten annotations.</li>
-          <li>Fine-tuned transformer models per document template.</li>
-          <li>Transparent confidence checks that spotlight risky fields.</li>
+        <ul class="project-list">
+          <li>
+            OCR pre-processing with clean-up for handwritten annotations.
+            <span class="evidence-tag">[OCR Pipeline Notebook, 2024]</span>
+          </li>
+          <li>
+            Fine-tuned transformer models per document template.
+            <span class="evidence-tag">[Model Training Logs, 2024]</span>
+          </li>
+          <li>
+            Transparent confidence checks that spotlight risky fields.
+            <span class="evidence-tag">[Quality Assurance Matrix, 2024]</span>
+          </li>
         </ul>
       </article>
 
@@ -87,10 +98,19 @@
 
       <article class="highlight-card glass-card">
         <h3>Next Steps</h3>
-        <ul>
-          <li>Augment edge cases with synthetic forms and retrain the model.</li>
-          <li>Ship a reviewer UI with highlighted discrepancies for instant clarity.</li>
-          <li>Automate the retraining pipeline to protect data quality over time.</li>
+        <ul class="project-list">
+          <li>
+            Augment edge cases with synthetic forms and retrain the model.
+            <span class="evidence-tag">[Data Augmentation Plan, 2025]</span>
+          </li>
+          <li>
+            Ship a reviewer UI with highlighted discrepancies for instant clarity.
+            <span class="evidence-tag">[Reviewer UI Wireframes, 2025]</span>
+          </li>
+          <li>
+            Automate the retraining pipeline to protect data quality over time.
+            <span class="evidence-tag">[MLOps Roadmap, 2025]</span>
+          </li>
         </ul>
       </article>
     </section>
