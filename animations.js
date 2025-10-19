@@ -1,106 +1,88 @@
-/*
-  animations.js
-  Contains:
-  1) Typewriter effect for the introduction
-  2) Scroll-in effect for projects, knowledge rows, and job blocks
-*/
+/* animations.js
+ * Lightweight interactivity helpers for the portfolio.
+ */
 
-/* 1) Typewriter effect */
-const introSteps = [
-  "H","i",","," ",
-  "m","y"," ","n","a","m","e"," ","i","s"," ",
-  "J","a","z","BKSP","BKSP","a","n","n","i","k",",",
-  " ","I","'","m"," ","1","9"," ","y","e","a","r","s"," ","o","l","d",",",
-  " ","a","n","d"," ","v","e","r","y"," ",
-  "e","n","t","h","u","s","i","a","BKSP","BKSP","BKSP","s","i","a","s","t","i","c"," ",
-  "a","b","o","u","t"," ","A","I",".",
-  " ","I"," ","l","o","v","e"," ","c","o","d","i","n","g"," ",
-  "a","n","d"," ","e","x","p","l","o","r","i","n","g"," ",
-  "n","e","w"," ","t","e","c","h","n","o","l","o","g","i","e","s",".",
-  "WAIT",
-  " ","H","o","p","e"," ","y","o","u"," ","e","n","j","o","y"," ","m","y"," ","s","i","t","e","!"
-];
+function setupTypewriter() {
+  const textTarget = document.getElementById('introduction-text');
+  const cursor = document.getElementById('intro-cursor');
 
-// Timings
-const typingSpeed = 50;
-const erasingSpeed = 20;
-const waitTime = 500;
-
-let currentStepIndex = 0;
-let introductionTextElement;
-let introCursor;
-let typedText = "";
-
-function typeIntroduction() {
-  if (currentStepIndex >= introSteps.length) {
-    // All steps completed: hide the cursor
-    introCursor.style.display = "none";
+  if (!textTarget || !cursor) {
     return;
   }
 
-  const currentStep = introSteps[currentStepIndex];
+  const message =
+    "Hi, my name is Jannik, I'm 19 years old, and very enthusiastic about AI. I love coding and exploring new technologies. Hope you enjoy my site!";
+  let index = 0;
+  const typingDelay = 45;
 
-  if (currentStep === "BKSP") {
-    typedText = typedText.slice(0, -1);
-    introductionTextElement.textContent = typedText;
-    currentStepIndex++;
-    setTimeout(typeIntroduction, erasingSpeed);
+  const type = () => {
+    if (index <= message.length) {
+      textTarget.textContent = message.slice(0, index);
+      index += 1;
+      setTimeout(type, typingDelay);
+    } else {
+      cursor.style.display = 'none';
+    }
+  };
 
-  } else if (currentStep === "WAIT") {
-    currentStepIndex++;
-    setTimeout(typeIntroduction, waitTime);
+  setTimeout(type, 350);
+}
 
-  } else {
-    typedText += currentStep;
-    introductionTextElement.textContent = typedText;
-    currentStepIndex++;
-    setTimeout(typeIntroduction, typingSpeed);
+function setupRevealAnimations() {
+  const elements = Array.from(document.querySelectorAll('.reveal-on-scroll'));
+  if (!elements.length) {
+    return;
   }
+
+  if (!('IntersectionObserver' in window)) {
+    elements.forEach((el) => el.classList.add('in-view'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        } else {
+          entry.target.classList.remove('in-view');
+        }
+      });
+    },
+    { threshold: 0.18, rootMargin: '0px 0px -10% 0px' }
+  );
+
+  elements.forEach((element) => observer.observe(element));
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  introductionTextElement = document.getElementById("introduction-text");
-  introCursor = document.getElementById("intro-cursor");
-  typeIntroduction(); // Start the typewriter animation
+function setupBackgroundParallax() {
+  const root = document.documentElement;
+  if (!root) {
+    return;
+  }
+
+  let ticking = false;
+
+  const updateShift = () => {
+    const maxShift = 1;
+    const shift = Math.min(window.scrollY / 1200, maxShift);
+    root.style.setProperty('--scroll-shift', shift.toFixed(3));
+    ticking = false;
+  };
+
+  const handleScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateShift);
+      ticking = true;
+    }
+  };
+
+  updateShift();
+  window.addEventListener('scroll', handleScroll, { passive: true });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  setupTypewriter();
+  setupRevealAnimations();
+  setupBackgroundParallax();
 });
-
-/* 2) Scroll effect for projects, knowledge rows, and job blocks */
-function handleScrollAnimation() {
-  const triggerBottom = (window.innerHeight / 5) * 4;
-
-  // Project cards
-  const projectCards = document.querySelectorAll(".project-card");
-  projectCards.forEach((card) => {
-    const cardTop = card.getBoundingClientRect().top;
-    if (cardTop < triggerBottom) {
-      card.classList.add("in-view");
-    } else {
-      card.classList.remove("in-view");
-    }
-  });
-
-  // Special knowledge rows
-  const knowledgeRows = document.querySelectorAll(".knowledge-row");
-  knowledgeRows.forEach((row) => {
-    const rowTop = row.getBoundingClientRect().top;
-    if (rowTop < triggerBottom) {
-      row.classList.add("in-view");
-    } else {
-      row.classList.remove("in-view");
-    }
-  });
-
-  // Job blocks
-  const jobBlocks = document.querySelectorAll(".job-block");
-  jobBlocks.forEach((block) => {
-    const blockTop = block.getBoundingClientRect().top;
-    if (blockTop < triggerBottom) {
-      block.classList.add("in-view");
-    } else {
-      block.classList.remove("in-view");
-    }
-  });
-}
-
-window.addEventListener("scroll", handleScrollAnimation);
-handleScrollAnimation();

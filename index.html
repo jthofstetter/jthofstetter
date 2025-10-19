@@ -2,44 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jannik Hofstetter - Personal Website</title>
-
-  <!-- Google Fonts: Fira Code & Bebas Neue -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jannik Hofstetter — AI Developer & Visionary Thinker</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Bebas+Neue&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Bebas+Neue&display=swap"
     rel="stylesheet"
   />
-  
-  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="header-content">
-      <h1 class="title animate-hero">JANNIK HOFSTETTER</h1>
-    </div>
-    <!-- Profile Picture -->
-    <div class="profile-pic-header">
-      <img
-        src="images/profilepicture.png"
-        alt="Portrait of Jannik Hofstetter"
-      />
-    </div>
-    <!-- Typewriter Introduction -->
-    <div class="intro-typewriter">
-      <span id="introduction-text"></span><span id="intro-cursor">|</span>
+  <header class="hero" id="top">
+    <nav class="top-nav">
+      <a class="nav-logo" href="#top" aria-label="Back to top">JH</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#knowledge">Knowledge</a></li>
+        <li><a href="#jobs">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav-contact" href="mailto:hello@jannikhofstetter.com">hello@jannikhofstetter.com</a>
+    </nav>
+
+    <div class="hero-shell">
+      <div class="hero-text">
+        <span class="hero-claim">AI Developer &amp; Visionary Thinker</span>
+        <h1 class="title hero-name">Jannik Hofstetter</h1>
+        <p class="hero-mission">
+          I build focused AI products that read documents, monitor markets, and improve everyday decisions.
+        </p>
+        <p class="hero-mission">
+          From HTL Krems to real-world pilots, I combine solid engineering with curiosity and fast iteration.
+        </p>
+
+        <div class="intro-typewriter" aria-live="polite">
+          <span id="introduction-text"></span><span id="intro-cursor">|</span>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://github.com/jthofstetter" target="_blank" rel="noopener" class="hero-link">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/jannik-hofstetter/"
+            target="_blank"
+            rel="noopener"
+            class="hero-link"
+            >LinkedIn</a
+          >
+          <a href="mailto:hello@jannikhofstetter.com" class="hero-link">E-Mail</a>
+          <a
+            href="https://www.kaggle.com/jannikhofstetter"
+            target="_blank"
+            rel="noopener"
+            class="hero-link"
+            >Kaggle</a
+          >
+        </div>
+
+        <dl class="hero-highlights">
+          <div>
+            <dt>Current Focus</dt>
+            <dd>Document intelligence &amp; adaptive trading analytics</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Lower Austria, AT</dd>
+          </div>
+          <div>
+            <dt>Availability</dt>
+            <dd>Master studies intake &amp; research collaborations (2025)</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-media">
+        <div class="profile-pic-header">
+          <img src="images/profilepicture.png" alt="Portrait of Jannik Hofstetter" />
+        </div>
+        <div class="hero-cta">
+          <a class="button primary" href="downloads/Jannik_Hofstetter_CV.pdf" download>Download CV</a>
+          <a class="button secondary" href="#projects">Explore Projects</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <!-- About & Education -->
-    <section class="section about-section">
-      <h2>About &amp; Education</h2>
-      <div class="about-grid">
-        <article class="info-card glass-card">
+    <section class="section section-about" id="about">
+      <div class="section-intro">
+        <h2>About &amp; Education</h2>
+        <p>
+          HTL Krems (Information Technology, AI focus) equips me with EQF Level 6 knowledge and the drive to ship
+          products that matter.
+        </p>
+      </div>
+
+      <div class="card-grid about-grid">
+        <article class="glass-card reveal-on-scroll">
           <h3>Core Highlights</h3>
           <ul class="detail-list bullet-verified">
             <li>
@@ -56,7 +115,8 @@
             </li>
           </ul>
         </article>
-        <article class="info-card glass-card">
+
+        <article class="glass-card reveal-on-scroll">
           <h3>HTL Krems – Informatics (2020–2025)</h3>
           <ul class="detail-list bullet-verified">
             <li>
@@ -77,7 +137,8 @@
             </li>
           </ul>
         </article>
-        <article class="info-card glass-card">
+
+        <article class="glass-card reveal-on-scroll">
           <h3>Tech Strengths</h3>
           <ul class="detail-list bullet-verified">
             <li>
@@ -97,11 +158,14 @@
       </div>
     </section>
 
-    <!-- Language Skills -->
-    <section class="section language-section">
-      <h2>Language Skills</h2>
+    <section class="section language-section" id="languages">
+      <div class="section-intro">
+        <h2>Language Skills</h2>
+        <p>Keeping communication sharp across English, German, and Russian study tracks.</p>
+      </div>
+
       <div class="language-constellation">
-        <div class="language-orbit language-left">
+        <div class="language-orbit reveal-on-scroll">
           <span class="flag-icon" aria-hidden="true">🇬🇧</span>
           <div class="language-meta">
             <h3>English</h3>
@@ -109,7 +173,7 @@
             <span class="source-tag">English Matura Certificate 2025</span>
           </div>
         </div>
-        <div class="language-core">
+        <div class="language-core reveal-on-scroll">
           <span class="flag-icon flag-large" aria-hidden="true">🇦🇹</span>
           <div class="language-meta">
             <h3>German</h3>
@@ -117,7 +181,7 @@
             <span class="source-tag">Austrian Nationality Record</span>
           </div>
         </div>
-        <div class="language-orbit language-right">
+        <div class="language-orbit reveal-on-scroll">
           <span class="flag-icon" aria-hidden="true">🇷🇺</span>
           <div class="language-meta">
             <h3>Russian</h3>
@@ -128,40 +192,43 @@
       </div>
     </section>
 
-    <!-- Special Knowledge -->
-    <section class="section special-knowledge">
-      <h2>Special Knowledge</h2>
+    <section class="section special-knowledge" id="knowledge">
+      <div class="section-intro">
+        <h2>Special Knowledge</h2>
+        <p>Key toolchains that support fast experimentation and delivery.</p>
+      </div>
+
       <div class="knowledge-grid">
-        <div class="knowledge-row">
+        <div class="knowledge-row reveal-on-scroll">
           <div class="knowledge-left">Content Creation</div>
           <div class="knowledge-right">
             Premiere Pro, Paint.NET
             <span class="source-tag">Production Toolkit Inventory</span>
           </div>
         </div>
-        <div class="knowledge-row">
+        <div class="knowledge-row reveal-on-scroll">
           <div class="knowledge-left">Programming</div>
           <div class="knowledge-right">
             C#, Python, C, JS
             <span class="source-tag">Coursework Repositories</span>
           </div>
         </div>
-        <div class="knowledge-row">
-          <div class="knowledge-left">AI & Machine Learning</div>
+        <div class="knowledge-row reveal-on-scroll">
+          <div class="knowledge-left">AI &amp; Machine Learning</div>
           <div class="knowledge-right">
             SDXL, Hunyuan, A1111, Fooocus, Ollama
             <span class="source-tag">Model Deployment Notes</span>
           </div>
         </div>
-        <div class="knowledge-row">
+        <div class="knowledge-row reveal-on-scroll">
           <div class="knowledge-left">Advanced Mathematics</div>
           <div class="knowledge-right">
             Algebra, Statistics, Probability, Analysis
             <span class="source-tag">Mathematics Transcript</span>
           </div>
         </div>
-        <div class="knowledge-row">
-          <div class="knowledge-left">Blockchain & Crypto</div>
+        <div class="knowledge-row reveal-on-scroll">
+          <div class="knowledge-left">Blockchain &amp; Crypto</div>
           <div class="knowledge-right">
             Use of APIs &amp; JSON
             <span class="source-tag">Smart Contract Lab Notes</span>
@@ -169,18 +236,19 @@
         </div>
       </div>
       <p class="knowledge-info">
-        Many more tools, including various online platforms, have been used in different projects.
-        However, to keep things concise, only the most frequently used tools are listed here.
+        Many more tools, including various online platforms, have been used in different projects. However, to keep
+        things concise, only the most frequently used tools are listed here.
         <span class="source-tag">Project Tooling Ledger</span>
       </p>
     </section>
 
-    <!-- Job Experience -->
-    <section class="section job-experience">
-      <h2>Job Experience</h2>
+    <section class="section job-experience" id="jobs">
+      <div class="section-intro">
+        <h2>Job Experience</h2>
+        <p>Hands-on experience that shaped my teamwork, logistics, and service mindset.</p>
+      </div>
       <div class="job-list">
-        <!-- 0) Austrian Red Cross Civil Service -->
-        <div class="job-block">
+        <div class="job-block reveal-on-scroll">
           <span class="status-chip status-ongoing">Ongoing</span>
           <h3 class="job-title">Austrian Red Cross Civil Service – Waidhofen an der Thaya</h3>
           <p class="job-dates">
@@ -188,8 +256,8 @@
             <span class="source-tag">Service Assignment Order</span>
           </p>
           <p class="job-description">
-            Supporting the Austrian Red Cross with patient transport logistics, emergency response
-            readiness, and community care routines while completing my civilian service.
+            Supporting the Austrian Red Cross with patient transport logistics, emergency response readiness, and
+            community care routines while completing my civilian service.
             <span class="source-tag">Red Cross Duty Brief</span>
           </p>
           <div class="job-metrics">
@@ -210,16 +278,15 @@
           </div>
         </div>
 
-        <!-- 1) Conen Waidhofen -->
-        <div class="job-block">
+        <div class="job-block reveal-on-scroll">
           <h3 class="job-title">Conen Wohnstudio</h3>
           <p class="job-dates">
             08/2024 - 09/2024
             <span class="source-tag">Internship Contract</span>
           </p>
           <p class="job-description">
-            Delivered furniture, observed general company processes,
-            and helped with various tasks. This provided a solid insight into how the business operates.
+            Delivered furniture, observed general company processes, and helped with various tasks. This provided a
+            solid insight into how the business operates.
             <span class="source-tag">Supervisor Reference Letter</span>
           </p>
           <div class="job-metrics">
@@ -240,16 +307,15 @@
           </div>
         </div>
 
-        <!-- 2) Worked for a Self-Employed Person -->
-        <div class="job-block">
+        <div class="job-block reveal-on-scroll">
           <h3 class="job-title">Independent IT Support Engagement</h3>
           <p class="job-dates">
             07/2024 - 08/2024
             <span class="source-tag">Client Agreement</span>
           </p>
           <p class="job-description">
-            Assisted with IT-related tasks, including setting up and rebuilding PCs,
-            organizing folder structures, installing printers, and optimizing overall workflow.
+            Assisted with IT-related tasks, including setting up and rebuilding PCs, organizing folder structures,
+            installing printers, and optimizing overall workflow.
             <span class="source-tag">Service Summary Email</span>
           </p>
           <div class="job-metrics">
@@ -270,16 +336,15 @@
           </div>
         </div>
 
-        <!-- 3) Test-Fuchs GmbH -->
-        <div class="job-block">
+        <div class="job-block reveal-on-scroll">
           <h3 class="job-title">Test-Fuchs GmbH</h3>
           <p class="job-dates">
             07/2023 - 08/2023
             <span class="source-tag">Employment Confirmation</span>
           </p>
           <p class="job-description">
-            Worked in logistics, helped in the warehouse with sorting, packing, and inventory.
-            Also got to know the company in a hands-on way.
+            Worked in logistics, helped in the warehouse with sorting, packing, and inventory. Also got to know the
+            company in a hands-on way.
             <span class="source-tag">Warehouse Supervisor Memo</span>
           </p>
           <div class="job-metrics">
@@ -301,10 +366,13 @@
         </div>
       </div>
     </section>
-  
-    <section class="section projects">
-      <h2>Projects</h2>
-      <!-- Legend -->
+
+    <section class="section projects" id="projects">
+      <div class="section-intro">
+        <h2>Projects</h2>
+        <p>Selected projects covering AI, product design, and mobile experiences.</p>
+      </div>
+
       <div class="project-legend">
         <div class="legend-item">
           <span class="legend-bar legend-completed"></span> Finished
@@ -315,8 +383,7 @@
       </div>
 
       <div class="projects-board">
-        <!-- Project 1 - Crypto Project (ONGOING) -->
-        <a class="project-card project-ongoing" href="project1.html">
+        <a class="project-card project-ongoing reveal-on-scroll" href="project1.html">
           <div class="project-image">
             <img src="images/project1.png" alt="Elster Crypto Scout preview" />
           </div>
@@ -342,8 +409,7 @@
           </div>
         </a>
 
-        <!-- Project 2 - AIvour (COMPLETED) -->
-        <a class="project-card project-completed" href="project2.html">
+        <a class="project-card project-completed reveal-on-scroll" href="project2.html">
           <div class="project-image">
             <img src="images/project2.png" alt="AIvour Prompt Studio preview" />
           </div>
@@ -369,8 +435,7 @@
           </div>
         </a>
 
-        <!-- Project 3 - To-Do App (COMPLETED) -->
-        <a class="project-card project-completed" href="project3.html">
+        <a class="project-card project-completed reveal-on-scroll" href="project3.html">
           <div class="project-image">
             <img src="images/project3.png" alt="Time-Savvy Planner screens" />
           </div>
@@ -396,10 +461,9 @@
           </div>
         </a>
 
-        <!-- Project 4 - Diploma Thesis -->
-        <a class="project-card project-ongoing" href="project4.html">
+        <a class="project-card project-ongoing reveal-on-scroll" href="project4.html">
           <div class="project-image">
-            <img src="images/project4.png" alt="Document intelligence diagrams" />
+            <img src="images/project4.png" alt="Document intelligence system dashboards" />
           </div>
           <div class="project-content">
             <div class="project-header">
@@ -423,7 +487,7 @@
           </div>
         </a>
 
-        <a class="project-card project-completed" href="project5.html">
+        <a class="project-card project-completed reveal-on-scroll" href="project5.html">
           <div class="project-image">
             <img src="images/project5.jpeg" alt="AI Social Media Accelerator boards" />
           </div>
@@ -449,9 +513,9 @@
           </div>
         </a>
 
-        <a class="project-card project-completed" href="project6.html">
+        <a class="project-card project-completed reveal-on-scroll" href="project6.html">
           <div class="project-image">
-            <img src="images/project6.png" alt="CoRide Mobility hero" />
+            <img src="images/project3/p3.png" alt="CoRide Mobility hero" />
           </div>
           <div class="project-content">
             <div class="project-header">
@@ -475,7 +539,7 @@
           </div>
         </a>
 
-        <a class="project-card project-ongoing" href="project7.html">
+        <a class="project-card project-ongoing reveal-on-scroll" href="project7.html">
           <div class="project-image">
             <img src="images/project5/p1.png" alt="FWTHORN performance analytics" />
           </div>
@@ -501,9 +565,9 @@
           </div>
         </a>
 
-        <a class="project-card project-ongoing" href="project8.html">
+        <a class="project-card project-ongoing reveal-on-scroll" href="project8.html">
           <div class="project-image">
-            <img src="images/project6/p2.png" alt="JustJoin prototype overview" />
+            <img src="images/project3/p1.png" alt="JustJoin prototype overview" />
           </div>
           <div class="project-content">
             <div class="project-header">
@@ -527,7 +591,7 @@
           </div>
         </a>
 
-        <a class="project-card project-ongoing" href="project9.html">
+        <a class="project-card project-ongoing reveal-on-scroll" href="project9.html">
           <div class="project-image">
             <img src="images/project3/p2.png" alt="RealityCheck progress charts" />
           </div>
@@ -555,14 +619,41 @@
       </div>
     </section>
 
+    <section class="section contact-section" id="contact">
+      <div class="section-intro">
+        <h2>Contact &amp; Downloads</h2>
+        <p>Direct ways to connect and access supporting documents.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card reveal-on-scroll" href="downloads/Jannik_Hofstetter_CV.pdf" download>
+          <span class="contact-label">CV PDF</span>
+          <span class="contact-value">Download</span>
+        </a>
+        <a class="contact-card reveal-on-scroll" href="mailto:hello@jannikhofstetter.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">hello@jannikhofstetter.com</span>
+        </a>
+        <a class="contact-card reveal-on-scroll" href="https://github.com/jthofstetter" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">@jthofstetter</span>
+        </a>
+        <a
+          class="contact-card reveal-on-scroll"
+          href="https://www.linkedin.com/in/jannik-hofstetter/"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">/in/jannik-hofstetter</span>
+        </a>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 | Created by Jannik Hofstetter</p>
   </footer>
 
-  <!-- JS for Animations -->
   <script src="animations.js"></script>
 </body>
 </html>
