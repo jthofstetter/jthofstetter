@@ -378,6 +378,7 @@ main {
 
 .flag-icon {
   font-size: 2.5rem;
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   filter: drop-shadow(0 12px 25px rgba(232, 184, 122, 0.35));
 }
 
