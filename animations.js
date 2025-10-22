@@ -1,61 +1,45 @@
 /* animations.js
- * Minimal animation helpers for the portfolio layout.
+ * Provides lightweight scroll-in animations for feature cards and project tiles.
  */
 
-function setupRevealAnimations() {
-  const elements = Array.from(document.querySelectorAll('.reveal-on-scroll'));
-  if (!elements.length) {
+function setupScrollAnimations() {
+  const selectors = [
+    '.reveal-on-scroll',
+    '.project-card',
+    '.knowledge-row',
+    '.job-block'
+  ];
+  const observed = [];
+  const seen = new Set();
+
+  selectors.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((element) => {
+      if (!seen.has(element)) {
+        observed.push(element);
+        seen.add(element);
+      }
+    });
+  });
+
+  if (!observed.length) {
     return;
   }
 
-  if (!('IntersectionObserver' in window)) {
-    elements.forEach((el) => el.classList.add('in-view'));
-    return;
-  }
+  const handleScrollAnimation = () => {
+    const triggerBottom = (window.innerHeight / 5) * 4;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-        } else {
-          entry.target.classList.remove('in-view');
-        }
-      });
-    },
-    { threshold: 0.25, rootMargin: '0px 0px -12% 0px' }
-  );
-
-  elements.forEach((element) => observer.observe(element));
-}
-
-function setupBackgroundParallax() {
-  const root = document.documentElement;
-  if (!root) {
-    return;
-  }
-
-  let ticking = false;
-
-  const updateShift = () => {
-    const maxShift = 1.1;
-    const shift = Math.min(window.scrollY / 900, maxShift);
-    root.style.setProperty('--scroll-shift', shift.toFixed(3));
-    ticking = false;
+    observed.forEach((element) => {
+      const top = element.getBoundingClientRect().top;
+      if (top < triggerBottom) {
+        element.classList.add('in-view');
+      } else {
+        element.classList.remove('in-view');
+      }
+    });
   };
 
-  const handleScroll = () => {
-    if (!ticking) {
-      window.requestAnimationFrame(updateShift);
-      ticking = true;
-    }
-  };
-
-  updateShift();
-  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScrollAnimation();
+  window.addEventListener('scroll', handleScrollAnimation, { passive: true });
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  setupRevealAnimations();
-  setupBackgroundParallax();
-});
+document.addEventListener('DOMContentLoaded', setupScrollAnimations);
