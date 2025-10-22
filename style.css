@@ -27,6 +27,7 @@ body {
     radial-gradient(circle at 80% 90%, rgba(101, 113, 255, 0.12), transparent 65%),
     var(--bg-base);
   position: relative;
+  line-height: 1.6;
   overflow-x: hidden;
   line-height: 1.6;
 }
